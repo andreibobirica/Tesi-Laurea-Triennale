@@ -1,0 +1,63 @@
+\chapter{Introduzione}
+\label{chap:introduzione}
+
+\section{Convenzioni tipografiche}
+Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
+\begin{itemize}
+	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
+	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \textit{parola}\glox\gloxspacing;
+	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \textit{corsivo}.
+\end{itemize}
+
+\section{Organizzazione del testo}
+Questa tesi è strutturata per fornire una visione dettagliata e comprensibile dell'esperienza di stage presso \myAzienda,
+\\focalizzandosi sullo sviluppo di un'applicazione \gls{crplg}\glox e sullo studio di un ambiente di sviluppo in \gls{monorepog}\glox.
+\\La suddivisione dei capitoli permette di seguire il percorso progettuale in modo chiaro e logico, dal contesto aziendale alle conclusioni finali. 
+Di seguito è riportata l'organizzazione del testo:
+
+\begin{description}
+    \item[{\hyperref[chap:introduzione]{Introduzione:}}] Il capitolo introduttivo presenta una panoramica dell'azienda UNOX S.p.A, il contesto dello stage, e fornisce una descrizione dettagliata dell'organizzazione della tesi.
+    \item[{\hyperref[chap:stage_descrizione]{Descrizione dello stage:}}] In questo capitolo viene descritto il progetto di stage, inclusi gli obiettivi tecnici e professionali, le attività svolte, la pianificazione dettagliata, l'analisi preventiva dei rischi e gli strumenti utilizzati.
+    \item[{\hyperref[chap:tecnologie_utilizzate]{Tecnologie utilizzate:}}] Questo capitolo elenca e descrive le tecnologie impiegate durante lo sviluppo dell'applicazione.
+    \item[{\hyperref[chap:analisi_requisiti]{Analisi dei requisiti:}}] In questa sezione vengono descritti i casi d'uso, il monitoraggio dei requisiti e le tabelle che specificano le funzioni principali dell'applicazione.
+    \item[{\hyperref[chap:design_coding]{Progettazione e codifica:}}] In questo capitolo verranno esaminati i design pattern adottati, esemplificati con parti significative di codice, insieme a descrizioni dettagliate di alcune funzionalità chiave sviluppate.
+    \item[{\hyperref[chap:studio_fattibilita]{Studio fattibilità app in monorepo:}}] Questo capitolo esplora la fattibilità dello sviluppo dell'applicazione in un ambiente monorepo, descrivendo l'organizzazione iniziale, le problematiche rilevate, le soluzioni proposte e gli strumenti utilizzati per la gestione delle dipendenze.
+    \item[{\hyperref[chap:conclusioni]{Conclusioni:}}] Il capitolo conclusivo presenta un consuntivo finale del lavoro svolto, una valutazione del raggiungimento degli obiettivi prefissati, le conoscenze acquisite durante lo stage, e una riflessione personale sull'esperienza complessiva.
+    \item[{\hyperref[cap:bibliography]{Bibliografia e Sitografia:}}] Infine, vengono elencate le fonti bibliografiche e sitografiche consultate per la redazione della tesi.
+\end{description}
+\pagebreak
+\section{L'azienda}
+
+\myAzienda è un'azienda leader nel settore della produzione di forni professionali per la ristorazione, fondata nel 1990 e situata a Cadoneghe, in provincia di Padova, Italia.
+Riconosciuta a livello internazionale per la qualità, l'affidabilità e l'innovazione dei suoi prodotti, UNOX è all'avanguardia nella tecnologia di cottura intelligente, che integra connettività avanzata e automazione.
+
+\subsection*{Mission e Vision}
+La mission di UNOX S.p.A è quella di contribuire al successo dei propri clienti offrendo soluzioni innovative e di alta qualità che migliorano le prestazioni e l'efficienza delle loro cucine.
+L'azienda si impegna a fornire prodotti che combinano tecnologia avanzata e facilità d'uso, garantendo al contempo sostenibilità ambientale e risparmio energetico.
+La vision di UNOX si concentra sull'essere il punto di riferimento per l'innovazione nel settore della ristorazione professionale.
+L'azienda punta a creare valore attraverso lo sviluppo continuo di tecnologie all'avanguardia e il miglioramento costante dei propri prodotti e servizi.
+
+\subsection*{Prodotti e Servizi}
+UNOX offre una vasta gamma di forni professionali, noti per la loro efficienza, versatilità e innovazione tecnologica.
+I prodotti principali includono:
+\begin{itemize}
+    \item Forni a convezione: Forni che utilizzano l'aria calda per cuocere il cibo in modo uniforme e veloce.
+    \item Forni a vapore: Forni che utilizzano il vapore per cucinare in modo sano e preservare le proprietà nutrizionali degli alimenti.
+    \item Sistemi di cottura intelligenti: Tecnologie integrate che permettono il controllo preciso dei processi di cottura e l'automazione delle operazioni.
+    \item Forni combinati: Forni che combinano cottura a vapore e a convezione, ideali per una varietà di preparazioni culinarie.
+\end{itemize}
+
+\subsection*{Connettività e Innovazione}
+UNOX S.p.A è pioniera nell'integrazione della connettività nei suoi prodotti, offrendo soluzioni che permettono il monitoraggio e il controllo remoto dei forni attraverso piattaforme digitali.
+L'azienda ha sviluppato il progetto \gls{ddcg}\glox, una piattaforma che utilizza i dati raccolti dai forni per ottimizzare i processi di cottura e fornire suggerimenti personalizzati agli chef.
+
+\section{Lo stage}
+Durante il mio stage presso \myAzienda, ho lavorato principalmente sull'avvio dello sviluppo di un'applicazione multi-piattaforma.
+\\Il mio obiettivo principale è stato ristrutturare e sviluppare completamente da zero DDC Service, un'applicazione precedentemente limitata alla piattaforma Web, destinata al personale tecnico responsabile della manutenzione e gestione dei forni.
+\\Il mio compito è stato estendere le funzionalità di DDC Service per renderla compatibile con dispositivi Android, iOS e Web.
+\\Ho integrato questa nuova versione nell'esistente monorepo di DDC.
+\\Questo approccio ha permesso di condividere il Design System e sfruttare l'infrastruttura esistente per ottimizzare l'efficienza e la manutenibilità del codice.
+
+Durante il periodo di stage, ho collaborato attivamente con il team di sviluppo, design e progettazione per implementare le prime funzionalità richieste per l'applicazione, rispettando le linee guida e assicurando la compatibilità su tutte le piattaforme target. 
+\\Questa esperienza mi ha fornito competenze pratiche nello sviluppo software multi-piattaforma e una comprensione approfondita della progettazione scalabile e della gestione delle risorse tecniche in un ambiente monorepo.
+\newpage
