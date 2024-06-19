@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  13 JUN 2024 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  19 JUN 2024 02:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1196,34 +1196,40 @@ Capitolo 1.
 
 
 
-] [2] [3] [4]) (./chapters/stage_descrizione.tex
+]
+Overfull \hbox (1.79263pt too wide) in paragraph at lines 24--25
+[]\T1/lmr/m/n/12 In que-sto ca-pi-to-lo ver-ran-no esa-mi-na-ti i [][][]De-si-gn Pat-
+ []
+
+[2] [3] [4] [5]) (./chapters/stage_descrizione.tex
 Capitolo 2.
-[5
+[6
 
-] [6] [7]) (./chapters/tecnologie_utilizzate.tex
+] [7] [8] [9] [10]) (./chapters/tecnologie_utilizzate.tex
 Capitolo 3.
-[8
+[11
 
-]) (./chapters/analisi_requisiti.tex
+] [12] [13] [14] [15]) (./chapters/analisi_requisiti.tex
 Capitolo 4.
-<img/usecase/scenario-principale.jpeg, id=229, 467.0221pt x 238.06589pt>
+[16
+
+]
+<img/usecase/scenario-principale.jpeg, id=350, 467.0221pt x 238.06589pt>
 File: img/usecase/scenario-principale.jpeg Graphic file (type jpg)
 <use img/usecase/scenario-principale.jpeg>
-Package pdftex.def Info: img/usecase/scenario-principale.jpeg  used on input line 13.
+Package pdftex.def Info: img/usecase/scenario-principale.jpeg  used on input line 29.
 (pdftex.def)             Requested size: 304.08884pt x 155.01706pt.
-[9
-
-] [10 <./img/usecase/scenario-principale.jpeg>] [11] [12] [13]) (./chapters/design_coding.tex
+ [17 <./img/usecase/scenario-principale.jpeg>] [18] [19] [20]) (./chapters/design_coding.tex
 Capitolo 5.
-[14
+[21
 
 ]) (./chapters/studio_fattibilita.tex
 Capitolo 6.
-[15
+[22
 
 ]) (./chapters/conclusioni.tex
 Capitolo 7.
-[16
+[23
 
 ]) (./references/bibliography.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 10.
@@ -1254,17 +1260,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39191 strings out of 474116
- 709850 string characters out of 5743682
- 1946187 words of memory out of 5000000
- 60817 multiletter control sequences out of 15000+600000
- 632884 words of font info for 70 fonts, out of 8000000 for 9000
+ 39633 strings out of 474116
+ 717712 string characters out of 5743682
+ 1943187 words of memory out of 5000000
+ 61233 multiletter control sequences out of 15000+600000
+ 637155 words of font info for 71 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,11n,98p,2491b,3145s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (29 pages, 1600282 bytes).
+Output written on thesis.pdf (36 pages, 1650003 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 367 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 617 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 407 words of extra memory for PDF output out of 10000 (max. 10000000)
 

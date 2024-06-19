@@ -1,6 +1,22 @@
 \chapter{Analisi dei requisiti}
 \label{chap:analisi_requisiti}
 
+\subsubsection{Caratteristiche degli utenti}
+La user base attesa è un subset degli utenti del sito \href{https://unox.com}{unox.com}. Pertanto sarà un'utenza con interesse per il mondo della cucina di alto livello: pasticceria, gastronomia, cucine ad alti volumi. In particolare, ci si aspetta che gli utenti che desiderano calcolare i consumi dei prodotti prestino una particolare attenzione all'efficienza enegetica e/o al possibile risparmio economico.
+
+\subsubsection{Vincoli generali}
+L'utente, per usufruire del servizio, necessita di un browser web e di una connessione ad internet.
+
+Il prodotto finale sarà  quindi un componente \textit{React} per guidare gli utenti nel processo di selezione del proprio prodotto e nell'inserimento dei dati relativi al consumo. Pensando a come questo sarebbe stato effettivamente utilizzato, ho individuato i seguenti attori:
+\begin{description}
+	\item[Utente generico] L'utente generico è un qualsiasi utilizzatore del sito web di Unox che accede al servizio.
+	\item[Cliente] Il Cliente è un utente generico. Questa è una distinzione puramente di Business e non garantisce accesso a nessuna funzionalità diversa dall'utente generico, allo stato attuale della specifica.
+	\item[Commerciale]  Il Commerciale è un addetto alle vendite di Unox. Anche questo attore esiste solo per differenziare a livello Business e non ha nessun impatto a livello di sistema.
+	\item[Fornitore di informazioni sull'energia] Un servizio esterno in grado di fornire prezzi di gas e corrente elettrica. È un attore secondario.
+\end{description}
+Durante le riunioni ho individuato i seguenti use case per la web-app da sviluppare:
+\paragraph*{UC1}
+
 \section{Casi d'uso}
 Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
 I diagrammi dei casi d'uso (in inglese \textit{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.

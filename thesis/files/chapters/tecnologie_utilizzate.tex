@@ -1,6 +1,70 @@
 \chapter{Tecnologie utilizzate}
 \label{chap:tecnologie_utilizzate}
+Questo capitolo esplora le tecnologie chiave adottate nel contesto dello sviluppo dell'applicazione \gls{ddcserviceg}\glox.
+Vengono presentati i linguaggi di programmazione, i framework, gli strumenti di sviluppo, le piattaforme di collaborazione e gestione, oltre alle soluzioni \textit{cloud} e \gls{devopsg}\glox impiegate per supportare e ottimizzare il processo di sviluppo.
+Ogni tecnologia è discussa nel contesto del suo ruolo nell'ecosistema di sviluppo dell'applicazione, evidenziando come contribuisca alla scalabilità, alla manutenibilità e alla coerenza del codice, nonché al miglioramento complessivo dell'efficienza operativa dell'azienda.
+\section{Linguaggi di programmazione}
+\begin{itemize}
+    \item \textbf{TypeScript}: è un linguaggio di programmazione open-source sviluppato da Microsoft.
+    TypeScript è un superset di JavaScript che aggiunge la tipizzazione statica opzionale e altre funzionalità moderne, rendendo il codice più robusto e manutenibile. 
+    Questo linguaggio è stato utilizzato per lo sviluppo dell'applicazione \textit{DDC Service}, sia per la parte \gls{frontendg}\glox che per l'integrazione con i servizi \gls{backendg}\glox, garantendo una maggiore affidabilità e scalabilità del codice.
+\end{itemize}
 
-\section{Elenco tecnologie}
+\section{Framework in uso}
+\begin{itemize}
+    \item \textbf{Expo}: è un \textit{framework open-source} per la creazione di applicazioni \textit{React Native}. Facilita lo sviluppo di applicazioni mobili fornendo strumenti e librerie preconfigurate.
+    Expo è stato utilizzato per lo sviluppo delle applicazioni \textit{Android} e \textit{iOS}, permettendo di scrivere il codice una sola volta e distribuirlo su entrambe le piattaforme in modo efficiente.
+    \item \textbf{Next.js}: un \textit{framework} di sviluppo \textit{React} per la creazione di applicazioni \textit{Web}. Supporta il \textit{rendering} lato \textit{server} e la generazione di siti statici, migliorando così le prestazioni e l'ottimizzazione per i motori di ricerca (\textit{SEO}).
+    \item \textbf{React}: è una libreria \textit{JavaScript} per la costruzione di interfacce utente sviluppata da \textit{Facebook}. React si distingue per la sua architettura basata su componenti e l'uso del \textit{virtual DOM}, che rendono lo sviluppo di interfacce utente reattive ed efficienti. In particolare, React è stato utilizzato come base per le applicazioni, consentendo la creazione di componenti riutilizzabili che migliorano la coerenza e la manutenibilità del codice.
+    \item \textbf{React Native}: è un framework open-source per lo sviluppo di applicazioni mobili creato da \textit{Facebook}. React Native permette di utilizzare React e \textit{TypeScript} per costruire applicazioni native per \textit{iOS} e \textit{Android}. Unox utilizza React Native per sviluppare applicazioni mobili, permettendo al team di scrivere il codice una sola volta e distribuirlo su entrambe le piattaforme, semplificando e ottimizzando gli sforzi di sviluppo.
+    \item \textbf{NodeJS}: è una piattaforma di \textit{runtime open-source} basata su \textit{JavaScript V8} di \textit{Chrome}, progettata per costruire applicazioni di rete veloci e scalabili. Unox utilizza NodeJS per l'esecuzione del codice \textit{TypeScript} e come gestore di pacchetti. Facilita le operazioni lato \textit{server}, consentendo una gestione efficiente di compiti come il \textit{rendering} del server e lo sviluppo di \textit{API}, migliorando le prestazioni e la scalabilità dell'applicazione.
+\end{itemize}
+
+\section{Tecnologie per monorepo}
+\begin{itemize}
+\item \textbf{NPM Workspaces}: una funzionalità di NPM che consente di gestire più pacchetti all'interno di un unico \gls{repog}\glox.
+NPM Workspaces è stato utilizzato per organizzare i vari pacchetti del progetto \gls{ddcserviceg}\glox, semplificando la gestione delle dipendenze e migliorando l'efficienza dello sviluppo.
+\item \textbf{NX}: un set di strumenti per la gestione di \gls{monorepog}\glox che facilita lo sviluppo, il test e la manutenzione di applicazioni e librerie su larga scala.
+Nel progetto \textit{DDC Service}, NX è stato implementato nella parte finale per la gestione del \textit{monorepo}, per organizzare e gestire le dipendenze del codice e migliorando la modularità e la coerenza del progetto.
+\end{itemize}
+
+\section{Librerie utilizzate}
+\begin{itemize}
+    \item \textbf{Solito}: una libreria che permette di condividere il codice tra applicazioni \textit{Next} ed \textit{Expo}, riducendo la duplicazione del codice e semplificando la manutenzione.
+    Nel contesto del progetto \gls{ddcserviceg}\glox, Solito è stato impiegato per ottimizzare la condivisione del codice tra le piattaforme web e mobile, implementando una gestione del routing comune tra le pagine.
+    Ciò ha permesso di mantenere una struttura di navigazione coerente e una logica di gestione dei percorsi uniforme, migliorando l'esperienza dell'utente e semplificando lo sviluppo e la manutenzione dell'applicazione su entrambe le piattaforme.
+    \item \textbf{Moti}: una libreria di animazioni per \textit{React Native}\glox\gloxspacing che facilita la creazione di animazioni complesse e fluide. È stata utilizzata nel progetto \gls{ddcserviceg}\glox per migliorare l'interazione dell'utente e l'aspetto visivo delle applicazioni mobili.
+    \item \textbf{Dripsy}: Una libreria per la gestione del stile di UI per React Native e Web.
+    Dripsy permette di definire uno stile una sola volta e eseguirlo ovunque, supportando la creazione di interfacce responsive che si adattano automaticamente a diverse dimensioni di schermo. È compatibile con Expo, Vanilla React Native e Next.js, offrendo un supporto completo per TypeScript e facilitando l'implementazione di temi personalizzati e varianti di tema.
+    Con una semplice \gls{api}\glox, è possibile definire stili tematici e responsivi in una sola riga di codice. Supporta anche modalità scura e personalizzazione dei colori.
+\end{itemize}
+
+\section{Strumenti di sviluppo}
+\begin{itemize}
+\item \textbf{Visual Studio Code}: un editor di codice sorgente sviluppato da \textit{Microsoft}, altamente estensibile e utilizzato per una varietà di linguaggi di programmazione.
+\item \textbf{Xcode}: un ambiente di sviluppo integrato (\textit{IDE}) di \textit{Apple} per \textit{macOS}, utilizzato per sviluppare software per \textit{iOS}, \textit{macOS}, \textit{watchOS} e \textit{tvOS}.
+\item \textbf{Android Studio}: un \textit{IDE} ufficiale per lo sviluppo di applicazioni \textit{Android}, fornito da \textit{Google}. Viene utilizzato per scrivere, eseguire il debug e testare le applicazioni \textit{Android}.
+\item \textbf{Prettier}: uno strumento di formattazione del codice che aiuta a mantenere uno stile di codice coerente in tutti i progetti.
+\item \textbf{Cocoapods}: un gestore di dipendenze per \textit{Swift} e \textit{Objective-C Cocoa projects}. Viene utilizzato per integrare librerie di terze parti nei progetti \textit{iOS}.
+\end{itemize}
+
+\section*{Piattaforme di collaborazione e gestione}
+\begin{itemize}
+\item \textbf{Git}: viene utilizzato come sistema di controllo delle versioni per il tracciamento delle modifiche al codice sorgente.
+\item \textbf{Microsoft Teams}: adottato come strumento di comunicazione e collaborazione in tempo reale all'interno dell'azienda, facilitando le discussioni, le videochiamate e la condivisione di documenti. Viene utilizzato anche per la calendarizzazione di eventi e meeting.
+\end{itemize}
+
+\section*{Piattaforme cloud e DevOps}
+\begin{itemize}
+\item \textbf{Microsoft Azure}: una piattaforma cloud utilizzata per l'hosting di applicazioni, servizi e dati aziendali. Viene utilizzato da Unox per l'hosting di alcuni dei servizi principali. Dalla suite di Azure, viene utilizzato anche \textit{Azure DevOps} per la gestione delle attività di sviluppo software, tra cui la gestione dei repository Git, delle build e delle attività.
+\item \textbf{AWS}: \textit{Amazon Web Services} (\textit{AWS}) è un altro servizio cloud utilizzato per le risorse di calcolo, archiviazione e servizi di rete. Alcuni dei servizi secondari di Unox sono ospitati su AWS.
+\item \textbf{Amplify}: è una piattaforma di sviluppo di applicazioni cloud che facilita l'integraazione di funzionalità come autenticazione, \textit{API}, storage e altro ancora. In questo progetto, Amplify è stato utilizzato per scaricare automaticamente le chiavi di accesso, migliorando la sicurezza e semplificando la gestione delle credenziali.
+\end{itemize}
+
+\section*{Strumenti di design}
+\begin{itemize}
+\item \textbf{Figma}: uno strumento di design collaborativo utilizzato per la progettazione delle interfacce utente. Facilita la collaborazione tra designer e sviluppatori e permette di creare e condividere facilmente prototipi e design.
+\end{itemize}
+
 
 \newpage

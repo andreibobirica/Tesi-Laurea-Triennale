@@ -560,6 +560,8 @@ INPUT ./chapters/stage_descrizione.tex
 INPUT ./chapters/stage_descrizione.tex
 INPUT ./chapters/stage_descrizione.tex
 INPUT chapters/stage_descrizione.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT ./chapters/tecnologie_utilizzate.tex
 INPUT ./chapters/tecnologie_utilizzate.tex
 INPUT ./chapters/tecnologie_utilizzate.tex
@@ -575,7 +577,6 @@ INPUT ./img/usecase/scenario-principale.jpeg
 INPUT ./img/usecase/scenario-principale.jpeg
 INPUT ./img/usecase/scenario-principale.jpeg
 INPUT ./img/usecase/scenario-principale.jpeg
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmbx10.tfm
 INPUT ./chapters/design_coding.tex
 INPUT ./chapters/design_coding.tex
 INPUT ./chapters/design_coding.tex
