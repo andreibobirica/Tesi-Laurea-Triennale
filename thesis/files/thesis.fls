@@ -572,11 +572,6 @@ INPUT ./chapters/analisi_requisiti.tex
 INPUT ./chapters/analisi_requisiti.tex
 INPUT ./chapters/analisi_requisiti.tex
 INPUT chapters/analisi_requisiti.tex
-INPUT ./img/usecase/scenario-principale.jpeg
-INPUT ./img/usecase/scenario-principale.jpeg
-INPUT ./img/usecase/scenario-principale.jpeg
-INPUT ./img/usecase/scenario-principale.jpeg
-INPUT ./img/usecase/scenario-principale.jpeg
 INPUT ./chapters/design_coding.tex
 INPUT ./chapters/design_coding.tex
 INPUT ./chapters/design_coding.tex

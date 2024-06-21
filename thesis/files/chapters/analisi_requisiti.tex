@@ -1,60 +1,81 @@
 \chapter{Analisi dei requisiti}
 \label{chap:analisi_requisiti}
 
-\subsubsection{Caratteristiche degli utenti}
-La user base attesa è un subset degli utenti del sito \href{https://unox.com}{unox.com}. Pertanto sarà un'utenza con interesse per il mondo della cucina di alto livello: pasticceria, gastronomia, cucine ad alti volumi. In particolare, ci si aspetta che gli utenti che desiderano calcolare i consumi dei prodotti prestino una particolare attenzione all'efficienza enegetica e/o al possibile risparmio economico.
+\section{Caratteristiche degli utenti}
+Per esaminare la \textit{user base} dell'app \gls{ddcserviceg}\glox bisogna tenere in considerazione 
+che tutti i dati di cui l'applicazione farà uso saranno reperibili dal \gls{backendg}\glox associato all'applicazione.
+Le basi di dati con cui il \textit{backend} andrà a comunicare saranno popolate da piattaforme esterne ignote alla app in questione.
+Per tanto il sistema di autenticazione non dovrà tenere in considerazione di tipologie di utenti speciali come \textit{Admin} o \textit{SysAdmin}.
 
-\subsubsection{Vincoli generali}
-L'utente, per usufruire del servizio, necessita di un browser web e di una connessione ad internet.
+Questi utenti possono far parte del personale Unox oppure possono essere professionisti con cui Unox collabora.
+Sono persone che richiedono di accedere alla app sia da \textit{Desktop} tramite \textit{web-app}, mentre sono in ufficio per esempio, che da app sul proprio \textit{smartphone} mentre sono in mobilità.
+La user base della app è composta da personale tecnico, personale responsabile alla vendita e utenti addetti al \textit{Service}.
+Non esiste però la necessità lato autenticazione di rendere il processo di registrazione o di \textit{login} diverso in base alla funzione del utente o in base alla sua appartenenza.
+In linea generica tutti gli utenti registrati hanno gli stessi permessi.
+In futuro l'applicazione necessiterà di un sistema per rendere un utente registrato verificato o meno, però per questo progetto questa richiesta non è stata una necessità.
 
-Il prodotto finale sarà  quindi un componente \textit{React} per guidare gli utenti nel processo di selezione del proprio prodotto e nell'inserimento dei dati relativi al consumo. Pensando a come questo sarebbe stato effettivamente utilizzato, ho individuato i seguenti attori:
+\section{Vincoli generali}
+Date le premesse sulle caratteristiche degli utenti della applicazione, definiremo quindi solo due categorie di utenti: Utente Autenticato, Utente Non Autenticato.
+Ho individuato i seguenti attori:
 \begin{description}
-	\item[Utente generico] L'utente generico è un qualsiasi utilizzatore del sito web di Unox che accede al servizio.
-	\item[Cliente] Il Cliente è un utente generico. Questa è una distinzione puramente di Business e non garantisce accesso a nessuna funzionalità diversa dall'utente generico, allo stato attuale della specifica.
-	\item[Commerciale]  Il Commerciale è un addetto alle vendite di Unox. Anche questo attore esiste solo per differenziare a livello Business e non ha nessun impatto a livello di sistema.
-	\item[Fornitore di informazioni sull'energia] Un servizio esterno in grado di fornire prezzi di gas e corrente elettrica. È un attore secondario.
+	\item[Utente Non Autenticato] L'Utente Non Autenticato è una tipologia di utente che o non si è ancora registrato e quindi non possiede delle credenziali oppure possiede delle credenziali ma deve ancora far il processo di \textit{login} detto \textit{signin}.
+	\item[Utente Autenticato] L'Utente Autenticato è una tipologia di utente che possiede delle credenziali valide e che ha completato con successo il processo di \textit{login} detto \textit{signin}.
 \end{description}
-Durante le riunioni ho individuato i seguenti use case per la web-app da sviluppare:
-\paragraph*{UC1}
 
 \section{Casi d'uso}
-Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
-I diagrammi dei casi d'uso (in inglese \textit{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
+I seguenti casi d'uso sono state formulati solo per le funzionalità che sono state realmente realizzate in quanto le funzionalità opzionali per le quali non si ha avuto tempo non sono state tenute in considerazione per l'analisi dei requisiti.
 
-Per comprendere le interazioni dell'utente con il prodotto, sono stati sviluppati diagrammi dei casi d'uso. 
-Questi diagrammi, noti anche come \textit{Use Case Diagram} nell'ambito \gls{uml}, sono strumenti essenziali per descrivere le funzionalità o i servizi offerti dal sistema, così come percepiti e utilizzati dagli attori che interagiscono con esso.
-\begin{figure}[H]
-    \vspace{2em}
-    \centering
-    \includegraphics[alt={Testo alternativo dell'immagine}, width=0.75\columnwidth]{img/usecase/scenario-principale.jpeg}
-    \caption{Use Case 0: Scenario principale}
-    \label{fig:scenario_principale}
-\end{figure}
-
-\begin{usecase}{0}{Scenario principale}
-    \usecaseactors{Sviluppatore applicativi.}
-    \usecasepre{Lo sviluppatore è entrato nel plugin di simulazione all'interno dell'IDE.}
-    \usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test.}
-    \usecasepost{Il sistema è pronto per permettere una nuova interazione.}
-    \label{uc:uc_scenario_principale}
+\begin{usecase}{0}{Autenticazione}
+    \usecaseactors{Utente Non Autenticato}
+    \usecasepre{Un Utente Non Autenticato vuole accedere alle funzionalità della app}
+    \usecasedesc{Questo scenario descrive un utente che vuole accedere alla funzionalità della app ma che non ne ha i permessi, per tanto deve fare la registrazione (\textit{singup}) o il \textit{login} (\textit{singin})}
+    \usecasepost{l'utente accede al processo di registrazione o di \textit{login}}
+    \label{uc:uc_scenario_autenticazione}
 \end{usecase}
 
-\begin{usecase}{1}{Gestione Utente}
-    \usecaseactors{Amministratore, Utente Registrato.}
-    \usecasepre{L'utente deve essere autenticato nel sistema.}
-    \usecasedesc{L'utente può gestire le informazioni del proprio profilo.}
-    \usecasepost{Le modifiche vengono salvate nel sistema.}
-    \usecasealt{Se l'utente non è autenticato, visualizza un messaggio di errore.}
-    \label{uc:uc_casi_uso}
+\begin{usecase}{0.1}{Registrazione}
+    \usecaseactors{Utente Non Autenticato}
+    \usecasepre{Un Utente Non Autenticato NON possiede delle credenziali per poter accedere alla app}
+    \usecasedesc{Questo scenario descrive un utente che non possiede credenziali di autenticazione e che non riesce ad accedere alle funzionalità della app, per tanto intraprende il processo di registrazione con cui alla fine riuscirà ad avere delle credenziali valide.}
+    \usecasepost{L'utente ora ha delle credenziali valide con cui poter effettuare il \textit{login} e diventare un Utente Autenticato}
+    \usecasealt{Se l'utente non fornisce con correttezza tutti i dati necessari alla registrazione, visualizza un messaggio di errore.}
+    \label{uc:uc_scenario_autenticazione_reg}
 \end{usecase}
 
-\begin{usecase}{2}{Creazione Prodotto}
-    \usecaseactors{Amministratore.}
-    \usecasepre{L'amministratore ha effettuato l'accesso al sistema.}
-    \usecasedesc{L'amministratore può aggiungere un nuovo prodotto al catalogo.}
-    \usecasepost{Il nuovo prodotto viene aggiunto con successo.}
-    \usecasealt{Se i campi obbligatori non sono compilati, visualizza un messaggio di errore.}
-    \label{uc:uc_creazione_prodotto}
+\begin{usecase}{0.2}{Login}
+    \usecaseactors{Utente Non Autenticato}
+    \usecasepre{Un Utente non Autenticato che possiede delle credenziali valide per l'autenticazione.}
+    \usecasedesc{Tramite questo scenario l'utente fornisce le sue credenziali per l'autenticazione e completa il processo di \textit{login}.}
+    \usecasepost{L'utente è diventato un Utente Autenticato}
+    \usecasealt{Se l'utente fornisce delle credenziali sbagliate, visualizza un messaggio di errore.}
+    \label{uc:uc_scenario_autenticazione_login}
+\end{usecase}
+
+\begin{usecase}{0.3}{Recover Password}
+    \usecaseactors{Utente Non Autenticato}
+    \usecasepre{Un Utente non Autenticato che possiede delle credenziali NON valide per l'autenticazione.}
+    \usecasedesc{Tramite questo scenario l'utente fornisce le sue credenziali in maniera parziale e tramite un processo riesce a ripristinarle per poter avere delle credenziali valide.}
+    \usecasepost{L'utente ha delle credenziali valide.}
+    \label{uc:uc_scenario_autenticazione_recover}
+\end{usecase}
+
+\begin{usecase}{1}{Visualizzazione Prodotto}
+    \usecaseactors{Utente Autenticato}
+    \usecasepre{Un utente ha completato con successo il processo di autenticazione.}
+    \usecasedesc{L'utente visualizza le informazioni di un determinato prodotto incluse le sue parti commerciali e i dettagli tecnici a lui associati.}
+    \usecasepost{L'utente ha visualizzato le informazioni collegate al prodotto richiesto.}
+    \usecasealt{Se il prodotto richiesto non è esistente, viene visualizzato un messaggio di errore.}
+    \label{uc:uc_scenario_prodotto}
+\end{usecase}
+
+
+\begin{usecase}{2}{Visualizzazione Serviced Oven}
+    \usecaseactors{Utente Autenticato}
+    \usecasepre{Un utente ha completato con successo il processo di autenticazione e ha tra i suoi forni alcuni dispositivi categorizzati come  \textit{Serviced Oven}, cioè forni a cui l'utente presta assistenza o manutenzione.}
+    \usecasedesc{L'utente visualizza le informazioni di un determinato \textit{Serviced Oven} di cui ne ha i permessi.}
+    \usecasepost{L'utente ha visualizzato le informazioni collegate al \textit{Serviced Oven} richiesto.}
+    \usecasealt{Se il prodotto richiesto non è esistente, viene visualizzato un messaggio di errore.}
+    \label{uc:uc_scenario_servicedoven}
 \end{usecase}
 
 \section{Tracciamento dei requisiti}
@@ -73,6 +94,8 @@ Il codice dei requisiti, dove ogni requisito è identificato con il carattere \t
 Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e \ref{tab:requisiti_vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
 
 \section{Tabelle dei requisiti}
+
+
 \begin{center}
     \rowcolors{1}{}{tableGray}
     \begin{longtable}{|p{2.25cm}|p{7.75cm}|p{2.25cm}|}
@@ -92,10 +115,40 @@ Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e 
     \rowcolor{white}
     \multicolumn{3}{|r|}{{Continua nella prossima pagina...}}\\
     \hline
+    %\caption{Tabella del tracciamento dei requisiti qualitativi.}
     \endfoot
     \endlastfoot
-    
-    RFN-1 & L’interfaccia permette di configurare il tipo di sonde del test & UC1 \\
+    RFN-1 & La funzionalità di autenticazione deve essere accessibile solo a Utenti Non Autenticati & UC0 \\
+    \hline
+    RFN-2 & L'utente deve essere in grado di accedere alla pagina registrazione detta \textit{signup}, questa pagina deve dare la possibilità di inserire i campi \textit{Name, Surname, Email, Password, Confirm Password, Company Name, Business Type, Address, Phone Number, Contry, Language} e scelte \textit{checkbox} GDPR e consenso Marketing & UC0.1 \\
+    \hline
+    RFN-2.1 & Nel \textit{form} per la registrazione devono esserci filtri per il controllo dei dati immessi come \textit{input} & UC0.1 \\
+    \hline
+    RFN-2.2 & Una volta immessi i dati nel \textit{form} della pagina di registrazione questa deve mostrare un messaggio che indica al utente di attivare l'account con la conferma della \textit{email} & UC0.1 \\
+    \hline
+    RFD-2.2.1 & Una volta confermata la email il processo di registrazione è completato, è richiesto che la app faccia automaticamente il \textit{login} con l'account appena creato, quindi ad ogni registrazione avviene il \textit{login} automatico & UC0.1 \\
+    \hline
+    RFN-3 & Nella pagina di \textit{login} l'utente presenta le sue credenziali nel apposito \textit{form} per poter diventare un Utente Autenticato & UC0.2 \\
+    \hline
+    RFN-3.1 & Nella pagina di \textit{login} nel caso in cui l'utente abbia inserito le credenziali non valide deve apparire un messaggio di errore & UC0.2 \\
+    \hline
+    RFN-4 & Deve esistere una pagina collegata alla pagina di \textit{login} che permetta di fare il processo di ripristino \textit{password}, detto \textit{Recover Password}, con questo processo l'utente inserisce la propria \textit{email} e dopo un processo di verifica gli viene confermato il ripristino della \textit{password} & UC0.3 \\
+    \hline
+    RFN-5 & La funzionalità di Prodotti definisce la \textit{feature} di visualizzazione di prodotti di Unox, sono tutti i prodotti esistenti e sono oggetti astratti da catalogo, non macchine reali, è richiesto solo la visualizzazione di un singolo prodotto nella sua \textit{Product Page} & UC1 \\
+    \hline
+    RFN-5.1 & Un prodotto deve essere identificato dal proprio \gls{productcodeg}\glox, se lo si identifica solo con il \textit{product code} si intende che si vuole visualizzare il prodotto con l'ultimo \gls{ecng}\glox & UC1 \\
+    \hline
+    RFN-5.2 & Nel caso in cui si identifica un prodotto tramite il suo seriale, si intende che si vuole una istanza di un prodotto, quindi un prodotto fisico realmente esistente. Questa metodologia permette di identificare un prodotto con un \textit{ecng} specifico.& UC1 \\
+    \hline
+    RFN-5.3 & Nella pagina visualizzazione prodotto deve essere possibile visualizzare informazioni riguardanti le specifiche del prodotto, i documenti al prodotto collegati ed i \textit{files} scaricabili come \gls{firmwareg}\glox o modelli 3D.& UC1 \\
+    \hline
+    RFN-6 & Deve essere implementata la \textit{feature} Service, in particolare \textit{Serviced Oven}, è richiesto che l'utente visualizzi un singolo suo prodotto identificato con un seriale& UC2 \\
+    \hline
+    RFN-6.1 & Nella pagina di \textit{Serviced Oven} si devono poter visualizzare le informazioni di connettibilità, si deve poter avere riferimenti alla pagina Prodotto del forno, e poter visualizzare e modificare le informazioni aggiuntive legate al prodotto, in particolare informazioni legate al cliente presso cui il forno è installato.& UC2 \\
+    \hline
+    RFN-7 & Per tutte le piattaforme deve essere realizzato un sistema di navigazione che permetta di cambiare le sezioni della app & UC0, UC1, UC2 \\
+    \hline
+    RFN-7.1 & Per le piattaforme mobile è prevista la realizzazione di una \gls{tabbarg}\glox invece per la piattaforma \textit{web} è prevista la realizzazione di una \gls{navbarg}\glox & UC0, UC1, UC2 \\
     \hline
     \hiderowcolors
     \caption{Tabella del tracciamento dei requisiti funzionali.}
@@ -125,18 +178,11 @@ Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e 
     %\caption{Tabella del tracciamento dei requisiti qualitativi.}
     \endfoot
     \endlastfoot
-    
-    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
+    RQN-1 & La navigazione della app deve essere funzionale sia da \textit{mobile} che da \textit{web}, permettendo di indentificare con facilità il corretto flusso di funzionamento della app indipendentemente dalla piattaforma in uso. & - \\
     \hline
-    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
+    RQN-2 & Il codice prodotto deve essere scalabile e manutenibile, rispettando i design pattern attualmente già utilizzati nel ecosistema Unox. & - \\
     \hline
-    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-    \hline
-    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-    \hline
-    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-    \hline
-    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
+    RQN-3 & Tutte le funzionalità realizzate devono essere testate su tutte le piattaforme di destinazione garantendo il loro funzionaento. & - \\
     \hline
     \hiderowcolors
     \caption{Tabella del tracciamento dei requisiti qualitativi.}
@@ -166,7 +212,9 @@ Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e 
     \endfoot
     \endlastfoot
     
-    RVO-1 & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
+    RVN-1 & Le pagine e i componenti della applicazione devono essere realizzati tenendo conto delle indicazioni date dal team di Design, rispettando un \textit{Design System} esistente e le convenzioni date per stili grafici compresi UI/UX & - \\
+    \hline
+    RVN-2 & Le feature realizzate per la applicazione devono essere compatibili con tutte le piattaforme di destinazione. & - \\
     \hline
     \hiderowcolors
     \caption{Tabella del tracciamento dei requisiti di vincolo.}
