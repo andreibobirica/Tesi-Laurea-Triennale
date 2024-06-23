@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  21 JUN 2024 19:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  23 JUN 2024 23:08
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -973,9 +973,28 @@ Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
-))) (./config/thesis_config.tex (./config/variables.tex) (./references/glossary_acronyms.tex)
-\c@usecasecounter=\count510
-\c@riskcounter=\count511
+))) (/usr/local/texlive/2024/texmf-dist/tex/generic/dirtree/dirtree.sty
+Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/dirtree/dirtree.tex `dirtree' v0.32, 2012/12/11 (jcc)
+\DT@offset=\dimen265
+\DT@width=\dimen266
+\DT@sep=\dimen267
+\DT@all=\dimen268
+\DT@rulewidth=\dimen269
+\DT@dotwidth=\dimen270
+\DTbaselineskip=\dimen271
+\DT@counti=\count510
+\DT@countii=\count511
+\DT@countiii=\count512
+\DT@countiv=\count513
+\DT@indent=\dimen272
+\DT@parskip=\dimen273
+\DT@baselineskip=\dimen274
+)
+File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
+) (./config/thesis_config.tex (./config/variables.tex) (./references/glossary_acronyms.tex)
+\c@usecasecounter=\count514
+\c@riskcounter=\count515
 runsystem(makeindex -s thesis.ist -t thesis.glg -o thesis.gls thesis.glo)...executed.
 
 runsystem(makeindex -s thesis.ist -t thesis.alg -o thesis.acr thesis.acn)...executed.
@@ -1032,16 +1051,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count512
-\scratchdimen=\dimen265
+\scratchcounter=\count516
+\scratchdimen=\dimen275
 \scratchbox=\box72
-\nofMPsegments=\count513
-\nofMParguments=\count514
+\nofMPsegments=\count517
+\nofMParguments=\count518
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count515
-\MPscratchDim=\dimen266
-\MPnumerator=\count516
-\makeMPintoPDFobject=\count517
+\MPscratchCnt=\count519
+\MPscratchDim=\dimen276
+\MPnumerator=\count520
+\makeMPintoPDFobject=\count521
 \everyMPtoPDFconversion=\toks48
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1232,19 +1251,41 @@ Underfull \hbox (badness 2573) in paragraph at lines 151--152
 Capitolo 5.
 [25
 
-] [26] [27] [28]) (./chapters/studio_fattibilita.tex
+] [26] [27] [28] [29] [30]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 143.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [31]
+Overfull \hbox (35.46188pt too wide) in paragraph at lines 158--159
+[]\T1/lmr/bx/n/12 Configurazioni\T1/lmr/m/n/12 : Fi-le di con-fi-gu-ra-zio-ne glo-ba-li, co-me \T1/lmtt/m/n/12 tsconfig.json\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 package.json
+ []
+
+[32] [33] [34] [35]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/default.pygstyle) (./_minted-thesis/D3F0D0CACBFABB7FD907B102D066A44045F6314F1AC508CA3B1599F1ED4E9BCE.pygtex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 2.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 306.
+ [36] [37]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/38969297BC5C7052DDFAA99D021AC67445F6314F1AC508CA3B1599F1ED4E9BCE.pygtex)
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [38] [39] [40]) (./chapters/studio_fattibilita.tex
 Capitolo 6.
-[29
+[41
 
 ]) (./chapters/conclusioni.tex
 Capitolo 7.
-[30
+[42
 
-]) (./references/bibliography.tex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 10.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (./references/webliography.tex
+]) (./references/bibliography.tex) (./references/webliography.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1264,22 +1305,24 @@ l.40 \end{document}
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+runsystem(rm thesis.pyg)...executed.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39849 strings out of 474116
- 721603 string characters out of 5743682
+ 40255 strings out of 474116
+ 728784 string characters out of 5743682
  1959187 words of memory out of 5000000
- 61425 multiletter control sequences out of 15000+600000
- 637155 words of font info for 71 fonts, out of 8000000 for 9000
+ 61783 multiletter control sequences out of 15000+600000
+ 641407 words of font info for 76 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,11n,98p,2491b,3169s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (44 pages, 1615174 bytes).
+ 99i,12n,98p,2491b,3147s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on thesis.pdf (56 pages, 1726129 bytes).
 PDF statistics:
- 722 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 474 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
+ 506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

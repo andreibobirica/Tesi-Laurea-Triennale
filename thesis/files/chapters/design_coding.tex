@@ -9,46 +9,349 @@ In questo capitolo verranno descritti i processi di progettazione e codifica uti
 \subsection{Backend e Frontend}
 \label{subsec:backend_frontend}
 
-Questa sezione descrive la suddivisione tra il backend e il frontend dell'applicazione. Include una panoramica delle tecnologie utilizzate e delle responsabilità di ciascuna parte.
+In questa sezione, verranno descritti il backend e il frontend dell'applicazione \gls{ddcserviceg}\glox. Si analizzeranno le differenze tra le due parti, le tecnologie utilizzate e le responsabilità di ciascuna componente.
 
 \subsubsection*{Responsabilità del Backend}
-Dettagliare le responsabilità del backend, come la gestione dei dati, l'autenticazione, la logica di business e le API.
+Il backend dell'applicazione è scritto in Node.js utilizzando TypeScript, una scelta che combina la flessibilità e la velocità di Node.js con la robustezza della tipizzazione statica di TypeScript.
+Il backend ha diverse responsabilità cruciali:
+
+\begin{itemize}
+    \item \textbf{Gestione dei Dati}: Il backend gestisce l'archiviazione, il recupero e la manipolazione dei dati.
+    Utilizza diversi Database per memorizzare informazioni strutturate. Inoltre, il backend si interfaccia con servizi di cloud storage come Amazon S3 di AWS per memorizzare file e oggetti di grandi dimensioni, garantendo alta disponibilità e durabilità.
+    \item \textbf{Autenticazione}: L'autenticazione degli utenti è un'altra responsabilità fondamentale del backend. L'autenticazione gestita dal backend offre un livello di sicurezza maggiore per diverse ragioni:
+    \begin{itemize}
+        \item \textbf{Controllo Centralizzato:} Il backend funge da punto centrale per la verifica delle credenziali degli utenti, garantendo che tutti i tentativi di accesso siano gestiti in modo uniforme e sicuro.
+        Questo riduce il rischio di inconsistenze e vulnerabilità che potrebbero sorgere se l'autenticazione fosse distribuita su più client.
+        \item \textbf{Protezione dei Segreti:} Nel backend, è possibile mantenere i segreti e le chiavi di crittografia al sicuro, lontano dai dispositivi degli utenti dove potrebbero essere più facilmente compromessi.
+        Ciò include la gestione sicura delle password, che vengono memorizzate come hash sicuri, e la generazione di token di accesso.
+        \item \textbf{Validazione e Scadenza dei Token:} Il backend può gestire la generazione, la validazione e la scadenza dei token di accesso JWT, assicurando che solo i token validi e non scaduti possano essere utilizzati per accedere alle risorse protette.
+        Questo meccanismo previene l'accesso non autorizzato e garantisce che gli utenti debbano autenticarsi periodicamente.
+        \item \textbf{Log e Monitoraggio:} Il backend può registrare tutte le attività di autenticazione, facilitando il monitoraggio e l'analisi dei tentativi di accesso.
+        Questo aiuta a identificare e rispondere rapidamente a potenziali attacchi, come tentativi di forza bruta o accessi sospetti.
+    \end{itemize}
+    Questi vantaggi fanno sì che l'autenticazione gestita dal backend sia un componente cruciale per la sicurezza complessiva dell'applicazione, proteggendo le informazioni sensibili degli utenti e garantendo l'integrità e la riservatezza dei dati.
+    \item \textbf{Logica di Business}: Il backend contiene la logica di business dell'applicazione, questa logica è separata in moduli e servizi, rendendo il codice più organizzato e manutenibile.
+    I servizi nel backend sono responsabili di eseguire operazioni come la validazione dei dati, l'elaborazione delle transazioni, e la comunicazione con servizi esterni.
+    \item \textbf{API}: Il backend espone API REST e GraphQL che permettono al frontend di interagire con i dati e le funzionalità dell'applicazione. Le API REST sono utilizzate per operazioni standard CRUD (Create, Read, Update, Delete) e seguono una struttura basata su risorse. GraphQL, d'altra parte, offre una maggiore flessibilità permettendo al frontend di specificare esattamente quali dati necessita, riducendo così il sovraccarico di rete e migliorando l'efficienza.
+\end{itemize}
 
 \subsubsection*{Responsabilità del Frontend}
-Dettagliare le responsabilità del frontend, come l'interfaccia utente, la gestione dello stato dell'applicazione e l'interazione con le API del backend.
+Il frontend dell'applicazione è la parte visibile e interattiva che gli utenti utilizzano.
+È sviluppato utilizzando Expo e Next.js, con Expo destinato alle piattaforme mobili e Next.js alle piattaforme web.
+Il linguaggio di programmazione utilizzato per il frontend è TypeScript. Le principali responsabilità del frontend includono:
+    \begin{itemize}
+        \item \textbf{Interfaccia Utente (UI)}: Il frontend è responsabile della presentazione visiva e dell'interazione dell'utente con l'applicazione.
+        Utilizza componenti React per costruire un'interfaccia modulare e riutilizzabile. Ogni componente rappresenta una parte della UI, come bottoni, moduli di input, e layout di pagina.
+        \item \textbf{Gestione dello Stato}: La gestione dello stato è un aspetto critico del frontend. Utilizzando Redux, una libreria per la gestione dello stato, l'applicazione mantiene uno stato globale che può essere condiviso tra vari componenti.
+        \item \textbf{Interazione con le API}: Il frontend interagisce con il backend attraverso le API REST e GraphQL. Utilizzando librerie come Axios o Fetch, il frontend invia richieste HTTP al backend per recuperare, creare, aggiornare o eliminare dati.
+        Le risposte del backend sono quindi utilizzate per aggiornare l'interfaccia utente, rendendo i dati dinamicamente disponibili agli utenti.
+        \item \textbf{Navigazione e Routing}: Il frontend gestisce la navigazione tra le diverse pagine dell'applicazione, permettendo agli utenti di spostarsi fluidamente all'interno dell'interfaccia.
+        Questo include la definizione di percorsi e la gestione delle transizioni tra le pagine, assicurando una suddivisione logica dell'applicazione in sezioni distinte e accessibili.
+    \end{itemize}
+
+\subsubsection*{Differenze tra Backend e Frontend}
+Sebbene il backend e il frontend siano strettamente collegati, essi hanno ruoli e responsabilità distinti:
+
+\begin{itemize}
+    \item \textbf{Tecnologie}: Il backend è sviluppato in Node.js, focalizzandosi sulla gestione dei dati, la logica di business e le API. 
+    Il frontend, invece, è sviluppato utilizzando Expo per le piattaforme mobili e Next.js per le piattaforme web, concentrandosi sull'interfaccia utente e l'esperienza dell'utente.
+    
+    \item \textbf{Responsabilità}: 
+    \begin{itemize}
+        \item \textbf{Backend}: Gestisce la logica di business, l'autenticazione, la gestione dei dati e la comunicazione con i servizi esterni.
+        \item \textbf{Frontend}: Si occupa della presentazione visiva, l'interazione dell'utente, la gestione dello stato e la navigazione.
+    \end{itemize}
+
+    \item \textbf{Interazione}: Il backend e il frontend comunicano tramite API, dove il backend fornisce i dati e le funzionalità necessarie, mentre il frontend li utilizza per creare un'interfaccia utente interattiva e dinamica.
+\end{itemize}
+
+\subsubsection*{Flusso di Lavoro Complessivo}
+Il flusso di lavoro tipico dell'applicazione prevede che l'utente interagisca con il frontend, che a sua volta invia richieste al backend. Il backend elabora queste richieste, esegue la logica di business necessaria, interagisce con i database e i servizi esterni, e infine restituisce una risposta al frontend.
+Il frontend quindi aggiorna l'interfaccia utente in base alla risposta ricevuta, garantendo un'esperienza utente fluida e interattiva.
+In sintesi, il backend e il frontend dell'applicazione \gls{ddcserviceg}\glox lavorano insieme per fornire un servizio completo ed efficiente, ognuno con ruoli e responsabilità specifici ma complementari.
+Questa architettura modulare e separata permette di sviluppare, mantenere e scalare l'applicazione in modo efficace.
+
 
 \subsection{Struttura delle Applicazioni}
 \label{subsec:struttura_applicazioni}
 
-Descrivere la struttura complessiva delle applicazioni, includendo la disposizione delle directory e dei file, e come questi sono organizzati per mantenere il codice manutenibile e modulare.
+La struttura complessiva delle applicazioni è organizzata in modo da mantenere il codice manutenibile e modulare. Questo approccio consente di gestire facilmente la complessità del progetto, facilitando lo sviluppo, la collaborazione e la scalabilità. 
+La disposizione delle directory e dei file è progettata per riflettere la suddivisione logica delle funzionalità, garantendo che ogni componente del sistema sia isolato e riutilizzabile.
+
 
 \subsubsection*{Monorepo}
-Spiegare l'uso di una monorepo per gestire il codice del progetto e come questo approccio facilita la condivisione del codice e delle risorse tra le diverse parti dell'applicazione.
+L'utilizzo di una monorepo è una strategia che permette di gestire tutto il codice del progetto in un unico repository.
+Questo approccio offre numerosi vantaggi, tra cui:
 
-\subsubsection*{Struttura delle Cartelle}
-Dettagliare la struttura delle cartelle del progetto, spiegando la logica dietro la suddivisione in moduli, componenti e servizi.
+\begin{itemize}
+    \item \textbf{Condivisione del Codice}: Facilita la condivisione di moduli e librerie comuni tra diverse parti dell'applicazione, evitando duplicazioni e incoerenze.
+    Questo approccio è particolarmente utile per il progetto DDC Service, poiché consente di riutilizzare parti comuni tra l'applicazione DDC e DDC Service, come il Design System, garantendo una coerenza visiva e funzionale tra le due applicazioni.
+    \item \textbf{Gestione delle Dipendenze}: Permette di avere una gestione centralizzata delle dipendenze, semplificando l'aggiornamento e la sincronizzazione delle librerie utilizzate.
+    Questo è essenziale per mantenere un ambiente di sviluppo stabile e aggiornato, riducendo i conflitti e le incompatibilità tra le diverse parti del progetto.
+    \item \textbf{Collaborazione}: Migliora la collaborazione tra i team, offrendo una visione unificata del progetto e facilitando la revisione del codice.
+    I team possono lavorare contemporaneamente su diverse parti dell'applicazione, beneficiando della trasparenza e della coerenza del codice condiviso.
+    \item \textbf{Strumenti di Build e CI/CD}: Consente di configurare strumenti di build e pipeline CI/CD in modo centralizzato, ottimizzando i processi di integrazione e distribuzione continua.
+    Questo permette di automatizzare i test, il rilascio e il deploy delle applicazioni DDC e DDC Service, assicurando che le nuove funzionalità e le correzioni di bug siano implementate rapidamente e senza intoppi.
+\end{itemize}
+Per questo progetto si è deciso di utilizzare la tecnologia monorepo presente con \textit{npm workspaces}.
+Questo primo approccio è stato scelto in quanto è stata la configurazione già addottata per DDC, tuttavia, come verrà analizzato nel capitolo successivo, ci sono soluzioni migliore.
+
+\pagebreak
+\subsubsection{Struttura delle directory}
+\label{subsec:strutturadirectory}
+
+Di seguito descritta la struttura complessiva delle applicazioni, spiegando come sono organizzate le directory e i file al fine di mantenere il codice manutenibile e modulare. La struttura del progetto è organizzata come segue:
+{\tiny\dirtree{%
+.1 root.
+.2 apps. 
+.3 ddc-service-expo.
+.4 android \hspace{5em} (Build Android).
+.4 ios \hspace{5em} (Build IOS).
+.4 public.
+.4 app \hspace{5em} (Routing e Navigazione).
+.4 app.json.
+.4 index.json.
+.4 tsconfig.json.
+.4 package.json.
+.4 node\_modules.
+.3 ddc-service-next.
+.4 pages \hspace{2em} (Routing e Navigazione).
+.4 public.
+.4 package.json.
+.4 node\_modules.
+.4 tsconfig.json.
+.3 expo \hspace{2em} (App DDC).
+.3 next \hspace{2em} (App DDC).
+.2 packages.
+.3 app \hspace{2em} (App DDC).
+.3 ddc-service  \hspace{2em} (App DDC Service).
+.4 components.
+.4 features.
+.4 provider.
+.4 store.
+.4 utils.
+.4 package.json.
+.4 node\_modules.
+.3 design-system. 
+.3 hooks.
+.3 utils.
+.2 scripts.
+.2 tsconfig.json.
+.2 .gitignore.
+.2 package.json.
+.2 node\_modules.
+}}
+
+\subsubsection{Visione Generale}
+La struttura del progetto è organizzata per supportare lo sviluppo e la gestione di quattro applicazioni principali: 
+due applicazioni DDC (una per Expo e una per Next) e due applicazioni DDC Service (una per Expo e una per Next).
+La suddivisione in diverse directory facilita la condivisione del codice, delle risorse e delle configurazioni tra le applicazioni, migliorando la manutenibilità e la modularità del progetto.
+
+Le directory principali sono suddivise come segue:
+\begin{itemize}
+    \item \textbf{apps}: Contiene le applicazioni specifiche per DDC e DDC Service. 
+    Ogni applicazione ha una directory separata per le versioni Expo e Next.
+    Le applicazioni contenute qui sono la struttura portante rispettivamente di Next ed Expo, e il codice contenuto dentro queste cartelle si occupa solamente di navigazione e routing.
+    \item \textbf{packages}: Contiene i pacchetti condivisi tra le applicazioni, inclusi componenti, utils, hook e il design system.
+    il package utils contiene funzioni utili per tutte le applicazioni che possono essere riutilizzate in ambito sviluppo multipiattaforma.
+    \item \textbf{scripts}: Contiene script per automatizzare varie attività di sviluppo e di deployment.
+    \item \textbf{Configurazioni}: File di configurazione globali, come \texttt{tsconfig.json}, \texttt{package.json} e \texttt{.gitignore}.
+\end{itemize}
+
+\subsubsection{Descrizione delle Directory}
+\begin{itemize}
+    \item \textbf{apps}
+    La directory \texttt{apps} contiene le applicazioni specifiche per DDC e DDC Service, organizzate come segue:
+    \begin{itemize}
+        \item \textbf{ddc-service-expo}: Contiene la versione Expo dell'applicazione DDC Service. Include le directory per Android e iOS, oltre a file di configurazione specifici per Expo.
+        \item \textbf{ddc-service-next}: Contiene la versione Next dell'applicazione DDC Service. Include le pagine dell'applicazione e i file di configurazione specifici per Next.js.
+        \item \textbf{expo (DDC)}: Contiene la versione Expo dell'applicazione DDC.
+        \item \textbf{next (DDC)}: Contiene la versione Next dell'applicazione DDC.
+    \end{itemize}
+
+    \item \textbf{packages}
+    La directory \texttt{packages} contiene i pacchetti condivisi tra le applicazioni, organizzati come segue:
+    \begin{itemize}
+        \item \textbf{app}: Pacchetto contenente le applicazioni e le pagine condivise tra le versioni Expo e Next dell'applicazione DDC.
+        \item \textbf{ddc-service}: Pacchetto contenente componenti, funzionalità, provider, store e utilità specifici per l'applicazione DDC Service.
+        \item \textbf{design-system}: Pacchetto contenente il design system condiviso tra le applicazioni, incluso il tema dell'applicazione e i componenti di base.
+        \item \textbf{hooks}: Pacchetto contenente hook condivisi tra le applicazioni.
+        \item \textbf{utils}: Pacchetto contenente utilità condivise tra le applicazioni.
+    \end{itemize}
+
+    \item \textbf{scripts}
+    La directory \texttt{scripts} contiene script per automatizzare varie attività di sviluppo, come l'installazione delle dipendenze, la costruzione e il deployment delle applicazioni.
+
+    \item \textbf{Configurazioni}
+    Nella root del progetto si trovano vari file di configurazione globali, tra cui:
+    \begin{itemize}
+        \item \texttt{postinstall.json}: Script eseguiti dopo l'installazione delle dipendenze.
+        \item \texttt{tsconfig.json}: Configurazione TypeScript condivisa tra tutte le applicazioni e i pacchetti.
+        \item \texttt{.gitignore}: File che specifica i file e le directory da ignorare nel controllo di versione.
+        \item \texttt{package.json}: Gestione delle dipendenze e script di progetto.
+        \item \texttt{node\_modules}: Directory generata automaticamente che contiene tutte le dipendenze installate.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Gestione delle Dipendenze}
+All'interno del file \textit{package.json} situato nella root del progetto, sono configurati diversi parametri che definiscono la struttura della monorepo. 
+In particolare, c'è una suddivisione tra due principali categorie di \textit{workspaces}: \textit{apps} e \textit{packages}.
+Per \textit{workspace} ci si riferisce alle cartelle contenute all'interno delle directory \textit{apps} e \textit{packages}. Ad esempio, \textit{ddc-service-expo} è considerato un workspace.
+Questa suddivisione permette una gestione organizzata e modulare del codice, facilitando la manutenzione e la scalabilità del progetto.
+Per quanto riguarda la gestione delle dipendenze, quando si utilizza un \textit{package} esterno, è necessario installarlo nel corretto \textit{workspace}. 
+Ogni \textit{workspace} ha il proprio file \textit{package.json}, che contiene solo le dipendenze specifiche necessarie per quel workspace.
+Questa separazione garantisce che ogni parte del progetto abbia accesso solo alle librerie di cui ha bisogno, evitando conflitti e riducendo il rischio di dipendenze non utilizzate.
+Inoltre, ogni \textit{workspace} ha una propria cartella \textit{node\_modules} dedicata, che contiene tutte le librerie e le dipendenze installate specificamente per quel workspace.
+Questa configurazione consente di mantenere un ambiente di sviluppo isolato per ciascun workspace, facilitando la gestione e l'aggiornamento delle dipendenze in modo indipendente.
+In sintesi, l'uso di \textit{workspaces} e la gestione decentralizzata delle dipendenze attraverso file \textit{package.json} separati e cartelle \textit{node\_modules} dedicate contribuiscono a rendere la monorepo più organizzata, modulare e manutenibile.
+Questa struttura permette ai team di sviluppo di lavorare in modo più efficiente, riducendo i tempi di integrazione e semplificando il processo di aggiornamento delle librerie.
+
+
 
 \section{Comunicazione}
 \label{sec:comunicazione}
 
+La comunicazione tra il frontend e il backend è un aspetto cruciale nello sviluppo di applicazioni moderne.
+Questo capitolo descrive i protocolli di comunicazione utilizzati, come REST e GraphQL, e l'uso di strumenti di code generation per mantenere il codice tipizzato e sincronizzato con lo schema GraphQL.
+
 \subsection{Protocolli di Comunicazione}
 \label{subsec:protocolli_comunicazione}
 
-Descrivere i protocolli di comunicazione utilizzati tra il frontend e il backend. Includere dettagli su REST, GraphQL e altri protocolli pertinenti.
+Per garantire una comunicazione efficace e sicura tra il frontend e il backend, sono stati adottati diversi protocolli di comunicazione.
+Tra i principali protocolli utilizzati troviamo REST e GraphQL, ciascuno con specifici casi d'uso e vantaggi.
 
 \subsubsection*{REST}
-Descrivere come e quando vengono utilizzate le API REST, includendo esempi di endpoint e metodi HTTP utilizzati.
+Le API REST sono utilizzate principalmente per l'autenticazione degli utenti.
+REST è un'architettura leggera che utilizza i metodi HTTP standard (GET, POST, PUT, DELETE) per eseguire operazioni CRUD (Create, Read, Update, Delete) sui dati.
+Un esempio di endpoint REST per l'autenticazione potrebbe essere:
+\begin{verbatim}
+POST /api/auth/login
+{
+    "username": "example_user",
+    "password": "example_password"
+}
+\end{verbatim}
+
+Questo endpoint accetta le credenziali dell'utente e, se valide, restituisce un token JWT che viene utilizzato per autenticare le richieste successive.
 
 \subsubsection*{GraphQL}
-Descrivere l'uso di GraphQL, i vantaggi rispetto a REST, e come viene implementato nel progetto. Includere esempi di query e mutazioni.
+GraphQL è un linguaggio di query per le API che offre una maggiore flessibilità rispetto a REST.
+In DDC Service, una volta ottenuto il token JWT tramite REST, GraphQL viene utilizzato per interrogare il backend.
+I vantaggi di GraphQL includono la possibilità di richiedere esattamente i dati necessari e la riduzione del numero di richieste necessarie per ottenere tutte le informazioni richieste.
 
-\subsection{GraphQL Codegen}
+Esempio generico di una query GraphQL:
+\begin{verbatim}
+query {
+    user(id: "123") {
+        id
+        name
+        email
+    }
+}
+\end{verbatim}
+
+Esempio generico di una mutazione GraphQL:
+\begin{verbatim}
+mutation {
+    updateUser(id: "123", input: {name: "New Name"}) {
+        id
+        name
+        email
+    }
+}
+\end{verbatim}
+
+GraphQL è stato scelto per la sua efficienza nella gestione delle richieste complesse e per la sua capacità di evolversi senza influenzare le versioni precedenti dell'API.
+
+\subsection{GraphQL Codegen e RTK Query}
 \label{subsec:graphql_codegen}
 
-Descrivere l'utilizzo di strumenti di code generation per GraphQL, come GraphQL Code Generator. Spiegare come questi strumenti aiutano a mantenere il codice tipizzato e sincronizzato con lo schema GraphQL.
+L'utilizzo combinato di strumenti di code generation per GraphQL, come GraphQL Code Generator, e Redux Toolkit Query (RTK Query) è fondamentale per mantenere il codice tipizzato e sincronizzato con lo schema GraphQL.
+GraphQL Code Generator genera automaticamente tipi TypeScript per le query, le mutazioni e i frammenti definiti, mentre RTK Query facilita l'integrazione di queste query nel sistema di gestione dello stato.
+Questa combinazione migliora la sicurezza del tipo e riduce gli errori di runtime, oltre a fornire un'architettura chiara e scalabile per la gestione delle API GraphQL nel frontend.
 
 \subsubsection*{Configurazione e Utilizzo}
-Dettagliare la configurazione di GraphQL Codegen nel progetto e fornire esempi di come viene utilizzato per generare codice.
+La configurazione di GraphQL Codegen nel progetto è semplice e diretta. I file .graphql, contenenti tutte le query da eseguire, sono memorizzati all'interno della cartella \textit{graphql/documents}.
+
+Di seguito è riportato un esempio di configurazione nel file \textit{codegen.config.ts}:
+
+\begin{listing}[H]
+    \begin{minted}{typescript}
+    import { CodegenConfig } from '@graphql-codegen/cli'
+
+    const config: CodegenConfig = {
+    schema: './store/graphql/schema.json',
+    documents: ['./store/graphql/documents/**/*.graphql'],
+    ignoreNoDocuments: true, // for better experience with the watcher
+    generates: {
+        './store/graphql/queryBaseApi.ts': {
+        plugins: [
+            'typescript',
+            'typescript-operations',
+            'typescript-resolvers',
+            {
+            'typescript-rtk-query': {
+                importBaseApiFrom: 'ddc-service/store/api/baseApi',
+                importBaseApiAlternateName: 'baseApi',
+                exportHooks: true,
+            },
+            },
+        ],
+        },
+    },
+    }
+
+    export default config
+    \end{minted}
+    \caption{Configurazione GraphQL Codegen: codegen.config.ts}
+    \label{listing_confgraphql_codegen}
+\end{listing}
+
+Questo file di configurazione specifica l'endpoint dello schema GraphQL (\textit{schema.json}), 
+i documenti GraphQL (\textit{documents}) da cui generare il codice, e i plugin da utilizzare per la generazione.
+Inoltre, viene generato un file chiamato \textit{queryBaseApi.ts}, che contiene tutte le query e le mutazioni definite nei file .graphql.
+
+Una volta configurato, è possibile eseguire il comando di generazione:
+
+\begin{verbatim}
+graphql-codegen
+\end{verbatim}
+
+Il file \textit{queryBaseApi.ts} generato viene utilizzato per integrare le query e le mutazioni GraphQL nel codice del frontend, sfruttando Redux per la gestione della cache.
+
+Queste API sono cacheate su Redux e possono essere chiamate semplicemente con:
+
+\begin{listing}[H]
+    \begin{minted}{typescript}
+        import { useGetOvensQuery } 
+        from 'ddc-service/store/graphql/queryBaseApi'
+    \end{minted}
+    Per utilizzare la query:
+    \begin{minted}{typescript}
+        const { data, isFetching, isLoading, isSuccess, 
+        isError, isUninitialized, error, refetch } = useGetOvensQuery({})
+    \end{minted}
+    \caption{Utilizz API GraphQL}
+    \label{listing_utilizzo_api}
+\end{listing}
+
+\begin{itemize}
+  \item \textbf{data}: contiene i dati recuperati dalla query.
+  \item \textbf{isFetching}: booleano che indica se la query è attualmente in fase di recupero.
+  \item \textbf{isLoading}: booleano che indica se la query è in fase di caricamento iniziale.
+  \item \textbf{isSuccess}: booleano che indica se la query è stata completata con successo.
+  \item \textbf{isError}: booleano che indica se c'è stato un errore nell'esecuzione della query.
+  \item \textbf{isUninitialized}: booleano che indica se la query non è stata ancora eseguita.
+  \item \textbf{error}: contiene informazioni sull'errore se la query ha fallito.
+  \item \textbf{refetch}: funzione che permette di eseguire nuovamente la query.
+\end{itemize}
+
+L'utilizzo di GraphQL Codegen garantisce che il codice rimanga sincronizzato con lo schema GraphQL, 
+riducendo il rischio di errori e migliorando la produttività del team di sviluppo.
+
+
+
+
 
 \subsection{Autenticazione}
 \label{subsec:autenticazione}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{data}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{isFetching}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{isLoading}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{isSuccess}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n+nx}{isError}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{isUninitialized}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{error}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{refetch}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{useGetOvensQuery}\PYG{p}{(\PYGZob{}\PYGZcb{})}
+\end{Verbatim}
