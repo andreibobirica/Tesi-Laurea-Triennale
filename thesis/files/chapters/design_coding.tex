@@ -1,20 +1,93 @@
-\chapter{Progettazione e codifica}
+\chapter{Progettazione e Codifica}
 \label{chap:design_coding}
-Breve introduzione al capitolo
 
-\section{Tecnologie e strumenti}
-\label{sec:tecnologie-strumenti}
-Di seguito viene data una panoramica delle tecnologie e strumenti utilizzati.
+In questo capitolo verranno descritti i processi di progettazione e codifica utilizzati nello sviluppo dell'applicazione \gls{ddcserviceg}\glox. Si esamineranno l'architettura dell'applicazione, le tecnologie utilizzate per il frontend e il backend, i protocolli di comunicazione, l'autenticazione e l'architettura a componenti.
 
-\subsection*{Tecnologia 1}
-Descrizione Tecnologia 1.
+\section{Architettura dell'Applicazione}
+\label{sec:architettura_applicazione}
 
-\section{Ciclo di vita del software}
-\label{sec:ciclo-vita-software}
+\subsection{Backend e Frontend}
+\label{subsec:backend_frontend}
 
-\section{Progettazione}
-\label{sec:progettazione}
+Questa sezione descrive la suddivisione tra il backend e il frontend dell'applicazione. Include una panoramica delle tecnologie utilizzate e delle responsabilità di ciascuna parte.
 
+\subsubsection*{Responsabilità del Backend}
+Dettagliare le responsabilità del backend, come la gestione dei dati, l'autenticazione, la logica di business e le API.
 
+\subsubsection*{Responsabilità del Frontend}
+Dettagliare le responsabilità del frontend, come l'interfaccia utente, la gestione dello stato dell'applicazione e l'interazione con le API del backend.
+
+\subsection{Struttura delle Applicazioni}
+\label{subsec:struttura_applicazioni}
+
+Descrivere la struttura complessiva delle applicazioni, includendo la disposizione delle directory e dei file, e come questi sono organizzati per mantenere il codice manutenibile e modulare.
+
+\subsubsection*{Monorepo}
+Spiegare l'uso di una monorepo per gestire il codice del progetto e come questo approccio facilita la condivisione del codice e delle risorse tra le diverse parti dell'applicazione.
+
+\subsubsection*{Struttura delle Cartelle}
+Dettagliare la struttura delle cartelle del progetto, spiegando la logica dietro la suddivisione in moduli, componenti e servizi.
+
+\section{Comunicazione}
+\label{sec:comunicazione}
+
+\subsection{Protocolli di Comunicazione}
+\label{subsec:protocolli_comunicazione}
+
+Descrivere i protocolli di comunicazione utilizzati tra il frontend e il backend. Includere dettagli su REST, GraphQL e altri protocolli pertinenti.
+
+\subsubsection*{REST}
+Descrivere come e quando vengono utilizzate le API REST, includendo esempi di endpoint e metodi HTTP utilizzati.
+
+\subsubsection*{GraphQL}
+Descrivere l'uso di GraphQL, i vantaggi rispetto a REST, e come viene implementato nel progetto. Includere esempi di query e mutazioni.
+
+\subsection{GraphQL Codegen}
+\label{subsec:graphql_codegen}
+
+Descrivere l'utilizzo di strumenti di code generation per GraphQL, come GraphQL Code Generator. Spiegare come questi strumenti aiutano a mantenere il codice tipizzato e sincronizzato con lo schema GraphQL.
+
+\subsubsection*{Configurazione e Utilizzo}
+Dettagliare la configurazione di GraphQL Codegen nel progetto e fornire esempi di come viene utilizzato per generare codice.
+
+\subsection{Autenticazione}
+\label{subsec:autenticazione}
+
+Descrivere il sistema di autenticazione utilizzato nell'applicazione. Includere dettagli sui flussi di autenticazione, i token JWT e le strategie di sicurezza implementate.
+
+\subsubsection*{Flussi di Autenticazione}
+Descrivere i vari flussi di autenticazione, come l'accesso tramite username e password, l'autenticazione a due fattori, e il rinnovo dei token.
+
+\subsubsection*{Gestione Cookie}
+
+\subsubsection*{Gestione dei Token JWT}
+Dettagliare l'uso di JSON Web Tokens (JWT) per l'autenticazione, inclusi i processi di generazione, validazione e gestione dei token.
+
+\section{Architettura a Componenti}
+\label{sec:architettura_componenti}
+
+\subsection{Componenti di Base Design System}
+Descrivere i componenti di base dell'applicazione e come vengono creati utilizzando React. Includere esempi di componenti comuni come bottoni, input e layout.
+
+\subsection{Componenti Compositi}
+Descrivere i componenti compositi, che combinano i componenti di base per formare parti più complesse dell'interfaccia utente.
+
+\subsubsection*{Esempi di Componenti Compositi}
+Fornire esempi di componenti compositi come moduli di login, tabelle di dati e dashboard.
+
+\subsection{Gestione dello Stato}
+Descrivere come viene gestito lo stato dell'applicazione utilizzando Redux o un altro sistema di gestione dello stato. Includere dettagli su azioni, riduttori e middleware.
+
+\subsubsection*{Azioni e Riduttori}
+Descrivere il ruolo delle azioni e dei riduttori nella gestione dello stato, includendo esempi pratici.
+
+\subsubsection*{Middleware}
+Descrivere l'uso dei middleware per gestire operazioni asincrone e altri effetti collaterali nello stato dell'applicazione.
+
+\subsection{Stilizzazione dei Componenti}
+Descrivere le tecniche di stilizzazione utilizzate per i componenti React, come CSS-in-JS, Styled Components, e altri approcci moderni.
+
+\subsubsection*{Esempi di Stilizzazione}
+Fornire esempi di stilizzazione dei componenti, spiegando come vengono applicati gli stili in modo modulare e riutilizzabile.
 
 \newpage

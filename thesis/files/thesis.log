@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  21 JUN 2024 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  21 JUN 2024 19:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1159,11 +1159,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] (./thesis.toc [5
 
 
-])
+] [6])
 \tf@toc=\write11
 \openout11 = `thesis.toc'.
 
- [6] (./thesis.lof)
+ [7] (./thesis.lof)
 \tf@lof=\write12
 \openout12 = `thesis.lof'.
 
@@ -1171,24 +1171,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@lot=\write13
 \openout13 = `thesis.lot'.
 
- [7
+ [8
 
 ] (./thesis.lol)
 \tf@lol=\write14
 \openout14 = `thesis.lol'.
 
- [8
+ [9
 
-]) (./thesis.acr) (./thesis.gls [9
+]) (./thesis.acr) (./thesis.gls [10
 
 
 
-]) [10
+]) [11
 
 
 ]
 Package hyperref Info: Option `pageanchor' set `false' on input line 25.
- [11
+ [12
 
 ] (./chapters/introduzione.tex
 Capitolo 1.
@@ -1213,7 +1213,12 @@ Capitolo 3.
 Capitolo 4.
 [16
 
-] [17] [18] [19]
+] [17] [18]
+Overfull \hbox (9.54607pt too wide) in paragraph at lines 72--80
+\T1/lmr/bx/n/12 Descrizione: \T1/lmr/m/n/12 L'u-ten-te vi-sua-liz-za le in-for-ma-zio-ni di un de-ter-mi-na-to [][][]Ser-vi-ced Oven[][]$[]$di
+ []
+
+[19]
 Underfull \hbox (badness 2573) in paragraph at lines 149--150
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
@@ -1227,13 +1232,13 @@ Underfull \hbox (badness 2573) in paragraph at lines 151--152
 Capitolo 5.
 [25
 
-]) (./chapters/studio_fattibilita.tex
+] [26] [27] [28]) (./chapters/studio_fattibilita.tex
 Capitolo 6.
-[26
+[29
 
 ]) (./chapters/conclusioni.tex
 Capitolo 7.
-[27
+[30
 
 ]) (./references/bibliography.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 10.
@@ -1264,17 +1269,17 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39787 strings out of 474116
- 720430 string characters out of 5743682
+ 39849 strings out of 474116
+ 721603 string characters out of 5743682
  1959187 words of memory out of 5000000
- 61377 multiletter control sequences out of 15000+600000
+ 61425 multiletter control sequences out of 15000+600000
  637155 words of font info for 71 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,11n,98p,2491b,3145s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,11n,98p,2491b,3169s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis.pdf (40 pages, 1602345 bytes).
+Output written on thesis.pdf (44 pages, 1615174 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 150 named destinations out of 1000 (max. 500000)
+ 474 words of extra memory for PDF output out of 10000 (max. 10000000)
 
