@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{import}\PYG{+w}{ }\PYG{err}{\PYGZbs{}}\PYG{n+nx}{textit}\PYG{p}{\PYGZob{}}\PYG{n+nx}{React}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}react\PYGZsq{}}\PYG{p}{;}
+\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{Text}\PYG{+w}{ }\PYG{k+kr}{as}\PYG{+w}{ }\PYG{n+nx}{RNText}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{TextProps}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}dripsy\PYGZsq{}}\PYG{p}{;}
+\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{useTheme}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}../Theme.tsx\PYGZsq{}}\PYG{p}{;}
+
+\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{Text}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{React.FC}\PYG{o}{\PYGZlt{}}\PYG{n+nx}{TextProps}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{style}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{...}\PYG{n+nx}{props}\PYG{+w}{ }\PYG{p}{\PYGZcb{})}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{colors}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{useTheme}\PYG{p}{();}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{RNText}\PYG{+w}{ }\PYG{n+nx}{style}\PYG{o}{=}\PYG{p}{\PYGZob{}[\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{color}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{colors.text}\PYG{+w}{ }\PYG{p}{\PYGZcb{},}\PYG{+w}{ }\PYG{n+nx}{style}\PYG{p}{]\PYGZcb{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}...}\PYG{n+nx}{props}\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{/\PYGZgt{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{};}
+
+\PYG{k}{export}\PYG{+w}{ }\PYG{k}{default}\PYG{+w}{ }\PYG{n+nx}{Text}\PYG{p}{;}
+\end{Verbatim}

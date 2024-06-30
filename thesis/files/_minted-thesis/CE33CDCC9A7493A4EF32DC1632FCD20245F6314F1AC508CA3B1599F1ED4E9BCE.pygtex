@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{View}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}dripsy\PYGZsq{}}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{Button}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{()}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{                }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{View}
+\PYG{+w}{                    }\PYG{n+nx}{sx}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}}
+\PYG{+w}{                        }\PYG{n+nx}{backgroundColor}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}primary\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{                        }\PYG{n+nx}{padding}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{10}\PYG{p}{,}
+\PYG{+w}{                        }\PYG{n+nx}{borderRadius}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{5}\PYG{p}{,}
+\PYG{+w}{                        }\PYG{n+nx}{alignItems}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}center\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}\PYGZcb{}}
+\PYG{+w}{                }\PYG{o}{\PYGZgt{}}
+\PYG{+w}{                    }\PYG{o}{\PYGZlt{}}\PYG{n+nx}{Text}\PYG{+w}{ }\PYG{n+nx}{sx}\PYG{o}{=}\PYG{p}{\PYGZob{}\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{color}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}white\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{fontSize}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{16}\PYG{+w}{ }\PYG{p}{\PYGZcb{}\PYGZcb{}}\PYG{o}{\PYGZgt{}}\PYG{n+nx}{Press}\PYG{+w}{ }\PYG{n+nx}{Me}\PYG{o}{\PYGZlt{}}\PYG{err}{/Text\PYGZgt{}}
+\PYG{+w}{                }\PYG{o}{\PYGZlt{}}\PYG{err}{/View\PYGZgt{}}
+\PYG{+w}{            }\PYG{p}{);}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{};}
+
+\PYG{+w}{        }\PYG{k}{export}\PYG{+w}{ }\PYG{k}{default}\PYG{+w}{ }\PYG{n+nx}{Button}\PYG{p}{;}
+\end{Verbatim}

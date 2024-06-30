@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  23 JUN 2024 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  30 JUN 2024 16:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1028,7 +1028,11 @@ Package csquotes Info: Redefining alias 'default' -> 'italian'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 15.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./thesis.aux)
+) (./thesis.aux
+
+LaTeX Warning: Label `fig:backendfrontend' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -1178,11 +1182,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 ] (./thesis.toc [5
 
 
-] [6])
+] [6] [7])
 \tf@toc=\write11
 \openout11 = `thesis.toc'.
 
- [7] (./thesis.lof)
+ [8] (./thesis.lof)
 \tf@lof=\write12
 \openout12 = `thesis.lof'.
 
@@ -1190,24 +1194,24 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@lot=\write13
 \openout13 = `thesis.lot'.
 
- [8
+ [9
 
 ] (./thesis.lol)
 \tf@lol=\write14
 \openout14 = `thesis.lol'.
 
- [9
+ [10
 
-]) (./thesis.acr) (./thesis.gls [10
+]) (./thesis.acr) (./thesis.gls [11
 
 
 
-]) [11
+]) [12
 
 
 ]
 Package hyperref Info: Option `pageanchor' set `false' on input line 25.
- [12
+ [13
 
 ] (./chapters/introduzione.tex
 Capitolo 1.
@@ -1220,7 +1224,23 @@ Overfull \hbox (2.7511pt too wide) in paragraph at lines 20--21
 
 
 
-] [2] [3] [4] [5]) (./chapters/stage_descrizione.tex
+] [2]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 33.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 33.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 33.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [3]
+<img/ddc.png, id=422, 1130.2225pt x 963.6pt>
+File: img/ddc.png Graphic file (type png)
+<use img/ddc.png>
+Package pdftex.def Info: img/ddc.png  used on input line 57.
+(pdftex.def)             Requested size: 333.72318pt x 284.52756pt.
+ [4 <./img/ddc.png>] [5]) (./chapters/stage_descrizione.tex
 Capitolo 2.
 [6
 
@@ -1228,39 +1248,41 @@ Capitolo 2.
 Capitolo 3.
 [11
 
-] [12] [13] [14] [15]) (./chapters/analisi_requisiti.tex
+] [12] [13] [14] [15] [16]) (./chapters/analisi_requisiti.tex
 Capitolo 4.
-[16
+[17
 
-] [17] [18]
-Overfull \hbox (9.54607pt too wide) in paragraph at lines 72--80
+] [18] [19]
+Overfull \hbox (9.54607pt too wide) in paragraph at lines 71--79
 \T1/lmr/bx/n/12 Descrizione: \T1/lmr/m/n/12 L'u-ten-te vi-sua-liz-za le in-for-ma-zio-ni di un de-ter-mi-na-to [][][]Ser-vi-ced Oven[][]$[]$di
  []
 
-[19]
-Underfull \hbox (badness 2573) in paragraph at lines 149--150
+[20]
+Underfull \hbox (badness 2573) in paragraph at lines 148--149
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 151--152
+Underfull \hbox (badness 2573) in paragraph at lines 150--151
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
 
-[20] [21] [22] [23] [24]) (./chapters/design_coding.tex
+[21] [22] [23] [24] [25]) (./chapters/design_coding.tex
 Capitolo 5.
-[25
+<img/frontendbackend.png, id=564, 1188.0pt x 659.34pt>
+File: img/frontendbackend.png Graphic file (type png)
+<use img/frontendbackend.png>
+Package pdftex.def Info: img/frontendbackend.png  used on input line 15.
+(pdftex.def)             Requested size: 256.3214pt x 142.26378pt.
+[26
 
-] [26] [27] [28] [29] [30]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 143.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [31]
-Overfull \hbox (35.46188pt too wide) in paragraph at lines 158--159
-[]\T1/lmr/bx/n/12 Configurazioni\T1/lmr/m/n/12 : Fi-le di con-fi-gu-ra-zio-ne glo-ba-li, co-me \T1/lmtt/m/n/12 tsconfig.json\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 package.json
- []
-
-[32] [33] [34] [35]
+ <./img/frontendbackend.png (PNG copy)>] [27] [28] [29] [30] [31] [32] [33] [34] [35]
+<img/restgraphql.png, id=618, 596.04124pt x 356.87968pt>
+File: img/restgraphql.png Graphic file (type png)
+<use img/restgraphql.png>
+Package pdftex.def Info: img/restgraphql.png  used on input line 237.
+(pdftex.def)             Requested size: 237.60283pt x 142.26378pt.
+ [36 <./img/restgraphql.png (PNG copy)>] [37]
 \openout6 = `thesis.pyg'.
 
  (./_minted-thesis/default.pygstyle) (./_minted-thesis/D3F0D0CACBFABB7FD907B102D066A44045F6314F1AC508CA3B1599F1ED4E9BCE.pygtex
@@ -1270,22 +1292,86 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 2
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 306.
- [36] [37]
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 325.
+ [38] [39]
 \openout6 = `thesis.pyg'.
 
  (./_minted-thesis/38969297BC5C7052DDFAA99D021AC67445F6314F1AC508CA3B1599F1ED4E9BCE.pygtex)
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [38] [39] [40]) (./chapters/studio_fattibilita.tex
+ (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [40] [41] [42]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/02B9C9591D8FB10DD44F5C9EA0CD115445F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [43] [44]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/2B6DFC01B9E339C83F6A8B01280CBD6945F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [45] [46]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/402CFFA959C5932F4BA79C72193860FA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [47] [48]
+Overfull \hbox (8.99905pt too wide) in paragraph at lines 584--585
+[]\T1/lmtt/m/n/12 InputField \T1/lmr/m/n/12 da \T1/lmtt/m/n/12 @unox/design-system/src/components/InputField\T1/lmr/m/n/12 : Un
+ []
+
+[49]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/17DC6303E822D0171D3BE36E2DD941EF45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [50]
+Overfull \vbox (72.04384pt too high) has occurred while \output is active []
+
+ [51]
+Overfull \hbox (35.98323pt too wide) in paragraph at lines 672--674
+[]\T1/lmtt/m/n/12 useGetOvensQuery, useGetProductDetailsQuery, useSearchProductQuery
+ []
+
+
+Overfull \hbox (12.69337pt too wide) in paragraph at lines 690--691
+[]\T1/lmtt/m/n/12 Breadcrumbs, BreadcrumpsCtrl \T1/lmr/m/n/12 da \T1/lmr/m/it/12 ../../com-po-nen-ts/Breadcrumbs\T1/lmr/m/n/12 : Com-
+ []
+
+[52] [53]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/2C6C23F07C608243FDEC6DE76C78199A45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [54]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/5004CB738122C46E84031DB097F2B0EC45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [55]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/89760FC5711B2C2A0BBC9D4AB620560E45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex)
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/8F0B29CF6182657F60D8519FE014095745F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [56]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/45414A7D0E8CEC54E969936D0D28921645F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [57]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/E14D1D1AF7C21FC577C9A8C52FCC08FF45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [58] [59]
+\openout6 = `thesis.pyg'.
+
+ (./_minted-thesis/CE33CDCC9A7493A4EF32DC1632FCD20245F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [60] [61]) (./chapters/studio_fattibilita.tex
 Capitolo 6.
-[41
+[62
 
 ]) (./chapters/conclusioni.tex
 Capitolo 7.
-[42
+[63
 
-]) (./references/bibliography.tex) (./references/webliography.tex
+]) (./references/bibliography.tex
+
+Package biblatex Warning: Type 'book' not found on input line 7.
+
+
+LaTeX Warning: Empty bibliography on input line 7.
+
+
+Package biblatex Warning: Type 'article' not found on input line 10.
+
+
+LaTeX Warning: Empty bibliography on input line 10.
+
+) (./references/webliography.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1293,7 +1379,12 @@ l.1 \chapter
             {Sitografia} [1
 
 
-])
+]
+Overfull \hbox (0.71616pt too wide) in paragraph at lines 6--6
+[][]\T1/lmr/m/it/12 Integrating Gra-ph-ql with Re-dux tool-kit and RTK-query\T1/lmr/m/n/12 . \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]$\T1/lmtt/m/n/12 https : / / lashanfaliq .
+ []
+
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1305,6 +1396,10 @@ l.40 \end{document}
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 runsystem(rm thesis.pyg)...executed.
 
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -1312,17 +1407,38 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40255 strings out of 474116
- 728784 string characters out of 5743682
+ 40687 strings out of 474116
+ 740982 string characters out of 5743682
  1959187 words of memory out of 5000000
- 61783 multiletter control sequences out of 15000+600000
- 641407 words of font info for 76 fonts, out of 8000000 for 9000
+ 62085 multiletter control sequences out of 15000+600000
+ 674413 words of font info for 93 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,12n,98p,2491b,3147s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on thesis.pdf (56 pages, 1726129 bytes).
+ 99i,12n,98p,2491b,3167s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on thesis.pdf (78 pages, 2525645 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 168 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1190 PDF objects out of 1200 (max. 8388607)
+ 255 named destinations out of 1000 (max. 500000)
+ 785 words of extra memory for PDF output out of 10000 (max. 10000000)
 

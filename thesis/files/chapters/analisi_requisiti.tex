@@ -5,10 +5,10 @@
 Per esaminare la \textit{user base} dell'app \gls{ddcserviceg}\glox bisogna tenere in considerazione 
 che tutti i dati di cui l'applicazione fa uso saranno reperibili dal \gls{backendg}\glox associato all'applicazione.
 Le basi di dati con cui il \textit{backend} andrà a comunicare saranno popolate da piattaforme esterne ignote alla app in questione.
-Per tanto il sistema di autenticazione non dovrà tenere in considerazione di tipologie di utenti speciali come \textit{Admin} o \textit{SysAdmin}.
+Il sistema di autenticazione non dovrà tenere in considerazione di tipologie di utenti speciali come \textit{Admin} o \textit{SysAdmin}.
 
 Questi utenti possono far parte del personale Unox oppure possono essere professionisti con cui Unox collabora.
-Sono persone che richiedono di accedere alla app sia da \textit{Desktop} tramite \textit{web-app}, mentre sono in ufficio per esempio, che da app sul proprio \textit{smartphone} mentre sono in mobilità.
+Sono persone che richiedono di accedere alla app sia da \textit{Desktop} tramite \textit{web-app}, mentre sono in ufficio per esempio, che da \textit{app} sul proprio \textit{smartphone} mentre sono in mobilità.
 La user base della app è composta da personale tecnico, personale responsabile alla vendita e utenti addetti al \textit{Service}.
 Non esiste però la necessità lato autenticazione di rendere il processo di registrazione o di \textit{login} diverso in base alla funzione del utente o in base alla sua appartenenza.
 In linea generica tutti gli utenti registrati hanno gli stessi permessi.
@@ -27,16 +27,16 @@ I seguenti casi d'uso sono state formulati solo per le funzionalità che sono st
 
 \begin{usecase}{0}{Autenticazione}
     \usecaseactors{Utente Non Autenticato}
-    \usecasepre{Un Utente Non Autenticato vuole accedere alle funzionalità della app}
-    \usecasedesc{Questo scenario descrive un utente che vuole accedere alla funzionalità della app ma che non ne ha i permessi, per tanto deve fare la registrazione (\textit{singup}) o il \textit{login} (\textit{singin})}
+    \usecasepre{Un Utente Non Autenticato vuole accedere alle funzionalità della \textit{app}}
+    \usecasedesc{Questo scenario descrive un utente che vuole accedere alla funzionalità della \textit{app} ma che non ne ha i permessi, per tanto deve fare la registrazione (\textit{singup}) o il \textit{login} (\textit{singin})}
     \usecasepost{l'utente accede al processo di registrazione o di \textit{login}}
     \label{uc:uc_scenario_autenticazione}
 \end{usecase}
 
 \begin{usecase}{0.1}{Registrazione}
     \usecaseactors{Utente Non Autenticato}
-    \usecasepre{Un Utente Non Autenticato NON possiede delle credenziali per poter accedere alla app}
-    \usecasedesc{Questo scenario descrive un utente che non possiede credenziali di autenticazione e che non riesce ad accedere alle funzionalità della app, per tanto intraprende il processo di registrazione con cui alla fine riuscirà ad avere delle credenziali valide.}
+    \usecasepre{Un Utente Non Autenticato NON possiede delle credenziali per poter accedere alla \textit{app}.}
+    \usecasedesc{Questo scenario descrive un utente che non possiede credenziali di autenticazione e che non riesce ad accedere alle funzionalità della \textit{app}, per tanto intraprende il processo di registrazione con cui alla fine riuscirà ad avere delle credenziali valide.}
     \usecasepost{L'utente ora ha delle credenziali valide con cui poter effettuare il \textit{login} e diventare un Utente Autenticato}
     \usecasealt{Se l'utente non fornisce con correttezza tutti i dati necessari alla registrazione, visualizza un messaggio di errore.}
     \label{uc:uc_scenario_autenticazione_reg}
@@ -58,7 +58,7 @@ I seguenti casi d'uso sono state formulati solo per le funzionalità che sono st
     \usecasepost{L'utente ha delle credenziali valide.}
     \label{uc:uc_scenario_autenticazione_recover}
 \end{usecase}
-
+\pagebreak
 \begin{usecase}{1}{Visualizzazione Prodotto}
     \usecaseactors{Utente Autenticato}
     \usecasepre{Un utente ha completato con successo il processo di autenticazione.}
@@ -67,7 +67,6 @@ I seguenti casi d'uso sono state formulati solo per le funzionalità che sono st
     \usecasealt{Se il prodotto richiesto non è esistente, viene visualizzato un messaggio di errore.}
     \label{uc:uc_scenario_prodotto}
 \end{usecase}
-
 
 \begin{usecase}{2}{Visualizzazione Serviced Oven}
     \usecaseactors{Utente Autenticato}
@@ -178,11 +177,11 @@ Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e 
     %\caption{Tabella del tracciamento dei requisiti qualitativi.}
     \endfoot
     \endlastfoot
-    RQN-1 & La navigazione della app deve essere funzionale sia da \textit{mobile} che da \textit{web}, permettendo di indentificare con facilità il corretto flusso di funzionamento della app indipendentemente dalla piattaforma in uso. & - \\
+    RQN-1 & La navigazione della app deve essere funzionale sia da \textit{mobile} che da \textit{web}, permettendo di indentificare con facilità il corretto flusso di funzionamento della \textit{app} indipendentemente dalla piattaforma in uso. & - \\
     \hline
-    RQN-2 & Il codice prodotto deve essere scalabile e manutenibile, rispettando i design pattern attualmente già utilizzati nel ecosistema Unox. & - \\
+    RQN-2 & Il codice prodotto deve essere scalabile e mantenibile, rispettando i \textit{design pattern} attualmente già utilizzati nel ecosistema Unox. & - \\
     \hline
-    RQN-3 & Tutte le funzionalità realizzate devono essere testate su tutte le piattaforme di destinazione garantendo il loro funzionaento. & - \\
+    RQN-3 & Tutte le funzionalità realizzate devono essere testate su tutte le piattaforme di destinazione garantendo il loro funzionamento. & - \\
     \hline
     \hiderowcolors
     \caption{Tabella del tracciamento dei requisiti qualitativi.}
@@ -212,9 +211,9 @@ Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e 
     \endfoot
     \endlastfoot
     
-    RVN-1 & Le pagine e i componenti della applicazione devono essere realizzati tenendo conto delle indicazioni date dal team di Design, rispettando un \textit{Design System} esistente e le convenzioni date per stili grafici compresi UI/UX & - \\
+    RVN-1 & Le pagine e i componenti della applicazione devono essere realizzati tenendo conto delle indicazioni date dal team di \textit{Design}, rispettando un \textit{Design System} esistente e le convenzioni date per stili grafici compresi \textit{UI/UX} & - \\
     \hline
-    RVN-2 & Le feature realizzate per la applicazione devono essere compatibili con tutte le piattaforme di destinazione. & - \\
+    RVN-2 & Le \textit{feature} realizzate per la applicazione devono essere compatibili con tutte le piattaforme di destinazione. & - \\
     \hline
     \hiderowcolors
     \caption{Tabella del tracciamento dei requisiti di vincolo.}

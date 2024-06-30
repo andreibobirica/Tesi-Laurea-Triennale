@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{import}\PYG{+w}{ }\PYG{n+nx}{Button}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{ButtonProps}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@unox/design\PYGZhy{}system/src/components/Button\PYGZsq{}}
+\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{View}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}dripsy\PYGZsq{}}
+\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{isWebPlatform}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{useIsMobile}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@unox/utils/breakpoints\PYGZsq{}}
+\PYG{k}{import}\PYG{+w}{ }\PYG{n+nx}{Text}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@unox/design\PYGZhy{}system/src/components/Text\PYGZsq{}}
+
+\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{TitleSection}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{props}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n+nx}{title?}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}
+\PYG{+w}{    }\PYG{n+nx}{size}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}small\PYGZsq{}}\PYG{+w}{ }\PYG{o}{|}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}large\PYGZsq{}}
+\PYG{+w}{    }\PYG{n+nx}{textAlignCenter?}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{boolean}
+\PYG{+w}{    }\PYG{n+nx}{subtitle?}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}
+\PYG{+w}{    }\PYG{n+nx}{backgroundColor?}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{string}
+\PYG{+w}{    }\PYG{n+nx}{button}\PYG{o}{?:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{showOnDesktop?}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{boolean}\PYG{p}{;}\PYG{+w}{ }\PYG{n+nx}{buttonProps}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{ButtonProps}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n+nx}{secondButton}\PYG{o}{?:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{showOnDesktop?}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{boolean}\PYG{p}{;}\PYG{+w}{ }\PYG{n+nx}{buttonProps}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{ButtonProps}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{})}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{size}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{title}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{textAlignCenter}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n+nx}{subtitle}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{button}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{secondButton}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{backgroundColor}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{props}
+\PYG{+w}{    }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{isMobile}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{useIsMobile}\PYG{p}{()}
+\PYG{+w}{    }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{isSmall}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{size}\PYG{+w}{ }\PYG{o}{===}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}small\PYGZsq{}}
+\PYG{+w}{    }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{isLarge}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{size}\PYG{+w}{ }\PYG{o}{===}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}large\PYGZsq{}}
+
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}\PYG{c+cm}{/**/}\PYG{p}{)}
+\PYG{+w}{    }\PYG{c+c1}{//}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

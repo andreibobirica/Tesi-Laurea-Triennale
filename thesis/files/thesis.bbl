@@ -19,82 +19,89 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{article:spooky}{article}{}
-      \name{author}{3}{}{%
-        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
-           family={Einstein},
-           familyi={E\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
-        {{hash=19dc919856626ef90dab285f889c3b78}{%
-           family={Podolsky},
-           familyi={P\bibinitperiod},
-           given={Boris},
-           giveni={B\bibinitperiod}}}%
-        {{hash=fc8bb495c63cdab3ba6923db2097e4c7}{%
-           family={Rosen},
-           familyi={R\bibinitperiod},
-           given={Nathan},
-           giveni={N\bibinitperiod}}}%
-      }
-      \strng{namehash}{d7a7dfe41768036d77a53afecb936f4e}
-      \strng{fullhash}{d7a7dfe41768036d77a53afecb936f4e}
-      \strng{bibnamehash}{d7a7dfe41768036d77a53afecb936f4e}
-      \strng{authorbibnamehash}{d7a7dfe41768036d77a53afecb936f4e}
-      \strng{authornamehash}{d7a7dfe41768036d77a53afecb936f4e}
-      \strng{authorfullhash}{d7a7dfe41768036d77a53afecb936f4e}
-      \field{sortinit}{E}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
+    \entry{site:dripsy}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Physical Review}
-      \field{number}{10}
-      \field{title}{Can Quantum-Mechanical Description of Physical Reality be Considered Complete?}
-      \field{volume}{47}
-      \field{year}{1935}
-      \true{nocite}
-      \field{pages}{777\bibrangedash 780}
-      \range{pages}{4}
-      \verb{doi}
-      \verb 10.1103/PhysRev.47.777
+      \field{title}{Dripsy}
+      \verb{urlraw}
+      \verb https://www.dripsy.xyz
+      \endverb
+      \verb{url}
+      \verb https://www.dripsy.xyz
       \endverb
     \endentry
-    \entry{womak:lean-thinking}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e476de67e57454852ad240f1ba5e23ca}{%
-           family={James\bibnamedelimb P.\bibnamedelimi Womack},
-           familyi={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim W\bibinitperiod},
-           given={Daniel\bibnamedelimb T.\bibnamedelimi Jones},
-           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Simon \& Schuster, Inc.}%
-      }
-      \strng{namehash}{e476de67e57454852ad240f1ba5e23ca}
-      \strng{fullhash}{e476de67e57454852ad240f1ba5e23ca}
-      \strng{bibnamehash}{e476de67e57454852ad240f1ba5e23ca}
-      \strng{authorbibnamehash}{e476de67e57454852ad240f1ba5e23ca}
-      \strng{authornamehash}{e476de67e57454852ad240f1ba5e23ca}
-      \strng{authorfullhash}{e476de67e57454852ad240f1ba5e23ca}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{labelnamesource}{author}
+    \entry{site:rtkquerycodegen}{online}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
-      \field{title}{Lean Thinking, Second Editon}
-      \field{year}{2010}
+      \field{title}{Integrating Graphql with Redux toolkit and RTK-query}
       \true{nocite}
+      \verb{urlraw}
+      \verb https://lashanfaliq.medium.com/integrating-graphql-with-redux-toolkit-and-rtk-query-cc8040f92bd
+      \endverb
+      \verb{url}
+      \verb https://lashanfaliq.medium.com/integrating-graphql-with-redux-toolkit-and-rtk-query-cc8040f92bd
+      \endverb
     \endentry
-    \entry{site:agile-manifesto}{online}{}
+    \entry{site:monorepomigration}{online}{}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labeltitlesource}{title}
-      \field{title}{Manifesto Agile}
-      \true{nocite}
+      \field{title}{Migrating to a Monorepo Using NPM 7 Workspaces}
       \verb{urlraw}
-      \verb http://agilemanifesto.org/iso/it/
+      \verb https://medium.com/edgybees-blog/how-to-move-from-an-existing-repository-to-a-monorepo-using-npm-7-workspaces-27012a100269
       \endverb
       \verb{url}
-      \verb http://agilemanifesto.org/iso/it/
+      \verb https://medium.com/edgybees-blog/how-to-move-from-an-existing-repository-to-a-monorepo-using-npm-7-workspaces-27012a100269
+      \endverb
+    \endentry
+    \entry{site:moti}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{Moti}
+      \verb{urlraw}
+      \verb https://moti.fyi/starter
+      \endverb
+      \verb{url}
+      \verb https://moti.fyi/starter
+      \endverb
+    \endentry
+    \entry{site:reactnativecookieauth}{online}{}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{title}
+      \field{title}{React Native Cookie Authentication}
+      \verb{urlraw}
+      \verb https://javascript.plainenglish.io/react-native-cookie-authentication-83ef6e84ba70
+      \endverb
+      \verb{url}
+      \verb https://javascript.plainenglish.io/react-native-cookie-authentication-83ef6e84ba70
+      \endverb
+    \endentry
+    \entry{site:solito}{online}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{title}{Solito}
+      \verb{urlraw}
+      \verb https://solito.dev
+      \endverb
+      \verb{url}
+      \verb https://solito.dev
+      \endverb
+    \endentry
+    \entry{site:unox_sito}{online}{}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labeltitlesource}{title}
+      \field{title}{Unox}
+      \verb{urlraw}
+      \verb https://www.unox.com/it_it/
+      \endverb
+      \verb{url}
+      \verb https://www.unox.com/it_it/
       \endverb
     \endentry
   \enddatalist

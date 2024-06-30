@@ -4,9 +4,9 @@
 \section{Convenzioni tipografiche}
 Riguardo la stesura del testo, relativamente al documento sono state adottate le seguenti convenzioni tipografiche:
 \begin{itemize}
-	\item gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento;
-	\item per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \textit{parola}\glox\gloxspacing;
-	\item i termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \textit{corsivo}.
+	\item Gli acronimi, le abbreviazioni e i termini ambigui o di uso non comune menzionati vengono definiti nel glossario, situato alla fine del presente documento.
+	\item Per la prima occorrenza dei termini riportati nel glossario viene utilizzata la seguente nomenclatura: \textit{parola}\glox.
+	\item I termini in lingua straniera o facenti parti del gergo tecnico sono evidenziati con il carattere \textit{corsivo}.
 \end{itemize}
 
 
@@ -30,15 +30,15 @@ Di seguito è riportata l'organizzazione del testo:
 \section{L'azienda}
 
 \myAzienda è un'azienda leader nel settore della produzione di forni professionali per la ristorazione, fondata nel 1990 e situata a Cadoneghe, in provincia di Padova, Italia.
-Riconosciuta a livello internazionale per la qualità, l'affidabilità e l'innovazione dei suoi prodotti, UNOX è all'avanguardia nella tecnologia di cottura intelligente, che integra connettività avanzata e automazione.
+\\Riconosciuta a livello internazionale per la qualità, l'affidabilità e l'innovazione dei suoi prodotti, UNOX è all'avanguardia nella tecnologia di cottura intelligente, che integra connettività avanzata e automazione.\footcite{site:unox_sito}
 
-\subsection*{Mission e Vision}
+\subsection{Mission e Vision}
 La mission di \myAzienda è quella di contribuire al successo dei propri clienti offrendo soluzioni innovative e di alta qualità che migliorano le prestazioni e l'efficienza delle loro cucine.
 L'azienda si impegna a fornire prodotti che combinano tecnologia avanzata e facilità d'uso, garantendo al contempo sostenibilità ambientale e risparmio energetico.
-La vision di UNOX si concentra sull'essere il punto di riferimento per l'innovazione nel settore della ristorazione professionale.
+\\La vision di UNOX si concentra sull'essere il punto di riferimento per l'innovazione nel settore della ristorazione professionale.
 L'azienda punta a creare valore attraverso lo sviluppo continuo di tecnologie all'avanguardia e il miglioramento costante dei propri prodotti e servizi.
 
-\subsection*{Prodotti e Servizi}
+\subsection{Prodotti e Servizi}
 UNOX offre una vasta gamma di forni professionali, noti per la loro efficienza, versatilità e innovazione tecnologica.
 I prodotti principali includono:
 \begin{itemize}
@@ -48,24 +48,32 @@ I prodotti principali includono:
     \item Forni combinati: Forni che combinano cottura a vapore e a convezione, ideali per una varietà di preparazioni culinarie.
 \end{itemize}
 
-\subsection*{Connettività e Innovazione}
+\subsection{Connettività e Innovazione}
 \myAzienda è pioniera nell'integrazione della connettività nei suoi prodotti, offrendo soluzioni che permettono il monitoraggio e il controllo remoto dei forni attraverso piattaforme digitali.
-L'azienda ha sviluppato il progetto \gls{ddc}\glox, una piattaforma che utilizza i dati raccolti dai forni per ottimizzare i processi di cottura e fornire suggerimenti personalizzati agli chef.
+\\L'azienda ha sviluppato il progetto \gls{ddc}\glox, una piattaforma che utilizza i dati raccolti dai forni per ottimizzare i processi di cottura e fornire suggerimenti personalizzati agli chef.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[alt={Immagine della applicazione DDC su piattaforma Web e Mobile}, height=10cm]{img/ddc.png}
+    \caption{App \textit{DDC}: Applicazione DDC su piattaforma Web e Mobile}
+    \label{fig:ddc}
+\end{figure}
+
 
 \section{Lo stage}
 L'offerta di stage mi ha immediatamente intrigato per il suo focus su un progetto specifico vitale per l'azienda, piuttosto che un semplice esercizio accademico.
 Questo aspetto ha richiesto un impegno significativo e una collaborazione intensa con diversi team per portare a termine un progetto cruciale per l'azienda.
 Nel contesto aziendale esistono due app chiamate \gls{ddc}\glox e \gls{ddcserviceg}\glox.
 \begin{itemize}
-    \item \gls{ddc} ha come utilizzatori i proprietari dei forni che utilizzano questa app per le funzionalità connesse dei loro dispositivi.
-    \item \gls{ddcserviceg} ha come utilizzatori personale tecnico, personale responsabile di manutenzione dei forni e utenti addetti al \textit{Service}.
+    \item \textit{DDC} ha come utilizzatori i proprietari dei forni che utilizzano questa app per le funzionalità connesse dei loro dispositivi.
+    \item \textit{DDC Service} ha come utilizzatori personale tecnico, personale responsabile di manutenzione dei forni e utenti addetti al \textit{Service}.
 \end{itemize}
-Per rispondere alle esigenze aziendali, è stato necessario avviare lo sviluppo di una nuova app \gls{ddcserviceg}\glox con una prospettiva moderna e che sia multi-piattaforma.
-Durante il mio stage presso \myAzienda, ho lavorato principalmente sull'avvio dello sviluppo di questa app, il mio obiettivo principale è stato ristrutturare e sviluppare completamente da zero \gls{ddcserviceg} precedentemente limitata alla piattaforma \textit{Web}.
-Ho esteso le funzionalità di \gls{ddcserviceg} per renderla compatibile con dispositivi Android, iOS e Web, integrando questa nuova versione nell'esistente \gls{monorepog}\glox di \gls{ddc}\glox.
-Questo approccio ha permesso di condividere il \gls{designsystemg}\glox e sfruttare l'infrastruttura esistente per ottimizzare l'efficienza e la manutenibilità del codice.
-Durante il periodo di stage, ho collaborato attivamente con il team di sviluppo, design e progettazione per implementare le prime funzionalità richieste per l'applicazione, rispettando le linee guida e assicurando la compatibilità su tutte le piattaforme \textit{target}.
-Questa esperienza mi ha fornito competenze pratiche nello sviluppo software multi-piattaforma e una comprensione approfondita della progettazione scalabile e della gestione delle risorse tecniche in un ambiente \gls{monorepog}.
+Per rispondere alle esigenze aziendali, è stato necessario avviare lo sviluppo di una nuova app \textit{DDC Service} con una prospettiva moderna e che sia multi-piattaforma.
+Durante il mio stage presso \myAzienda, ho lavorato principalmente sull'avvio dello sviluppo di questa app, il mio obiettivo principale è stato ristrutturare e sviluppare completamente da zero \textit{DDC Service} precedentemente limitata alla piattaforma \textit{Web}.
+Ho esteso le funzionalità di \textit{DDC Service} per renderla compatibile con dispositivi \textit{Android, iOS e Web}, integrando questa nuova versione nell'esistente \gls{monorepog}\glox di \textit{DDC}.
+\\Questo approccio ha permesso di condividere il \gls{designsystemg}\glox e sfruttare l'infrastruttura esistente per ottimizzare l'efficienza e la manutenibilità del codice.
+\\Durante il periodo di stage, ho collaborato attivamente con il team di sviluppo, design e progettazione per implementare le prime funzionalità richieste per l'applicazione, rispettando le linee guida e assicurando la compatibilità su tutte le piattaforme \textit{target}.
+Questa esperienza mi ha fornito competenze pratiche nello sviluppo software multi-piattaforma e una comprensione approfondita della progettazione scalabile e della gestione delle risorse tecniche in un ambiente \textit{monorepo}.
 
 
 \newpage

@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{c+c1}{// store.ts}
+\PYG{+w}{        }\PYG{k}{import}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }\PYG{n+nx}{configureStore}\PYG{+w}{ }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}@reduxjs/toolkit\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{import}\PYG{+w}{ }\PYG{n+nx}{counterReducer}\PYG{+w}{ }\PYG{k+kr}{from}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}./slices/counterSlice\PYGZsq{}}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{store}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nx}{configureStore}\PYG{p}{(\PYGZob{}}
+\PYG{+w}{            }\PYG{n+nx}{reducer}\PYG{o}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nx}{counter}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{counterReducer}\PYG{p}{,}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{});}
+
+\PYG{+w}{        }\PYG{k}{export}\PYG{+w}{ }\PYG{k}{default}\PYG{+w}{ }\PYG{n+nx}{store}\PYG{p}{;}
+\end{Verbatim}
