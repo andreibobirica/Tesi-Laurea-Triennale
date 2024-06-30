@@ -68,6 +68,18 @@
       \verb https://moti.fyi/starter
       \endverb
     \endentry
+    \entry{site:peerdep}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Peer Dependencies}
+      \verb{urlraw}
+      \verb https://blog.bitsrc.io/understanding-peer-dependencies-in-javascript-dbdb4ab5a7be
+      \endverb
+      \verb{url}
+      \verb https://blog.bitsrc.io/understanding-peer-dependencies-in-javascript-dbdb4ab5a7be
+      \endverb
+    \endentry
     \entry{site:reactnativecookieauth}{online}{}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}

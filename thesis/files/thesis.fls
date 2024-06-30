@@ -704,6 +704,11 @@ INPUT ./chapters/studio_fattibilita.tex
 INPUT ./chapters/studio_fattibilita.tex
 INPUT ./chapters/studio_fattibilita.tex
 INPUT chapters/studio_fattibilita.tex
+INPUT ./img/monorepocompare.png
+INPUT ./img/monorepocompare.png
+INPUT ./img/monorepocompare.png
+INPUT ./img/monorepocompare.png
+INPUT ./img/monorepocompare.png
 INPUT ./chapters/conclusioni.tex
 INPUT ./chapters/conclusioni.tex
 INPUT ./chapters/conclusioni.tex

@@ -967,4 +967,27 @@ rendendo facile aggiungere e modificare stili in modo dichiarativo.
 L'utilizzo di \textit{Dripsy} nel progetto \textit{DDC Service} contribuisce quindi a una gestione efficace degli stili dei componenti, 
 consentendo una implementazione fluida e uniforme su tutte le piattaforme supportate dall'applicazione.
 
+\section{Descrizione routing e navigazione}
+La navigazione all'interno delle applicazioni \textit{web} e native presenta differenze sostanziali dovute alle diverse piattaforme e paradigmi di interazione. 
+Su \textit{web}, la navigazione avviene principalmente attraverso \textit{URL} e percorsi, mentre su applicazioni native è più comune l'uso di \textit{stack} di navigazione e transizioni tra schermate.
+
+In questo progetto, si è utilizzato la libreria \textit{Solito} per unificare la gestione del \textit{routing} tra le piattaforme \textit{Expo} e \textit{Next.js}, riducendo la duplicazione del codice e semplificando la manutenzione. 
+\textit{Solito} consente di condividere la logica di navigazione tra \textit{web} e \textit{mobile}, permettendo una struttura di navigazione coerente e una gestione uniforme dei percorsi.
+
+\subsection*{Routing tra le pagine}
+Il \textit{routing} si riferisce al processo di determinazione della destinazione corretta in risposta alle interazioni dell'utente, come \textit{clic} sui \textit{link} o selezione di opzioni di menu.
+È stato implementato il \textit{routing} utilizzando le convenzioni di \textit{Expo} e \textit{Next.js}, con una struttura a \textit{folder} che facilita l'organizzazione e la scalabilità del progetto.
+
+\subsection*{Navigazione con Solito}
+La scelta di utilizzare \textit{Solito} è stata motivata dalla necessità di avere una soluzione che permettesse di condividere il codice tra le piattaforme \textit{web} e \textit{mobile}.
+Con \textit{Solito}, è possibile definire la logica di navigazione una sola volta e utilizzarla sia su \textit{Expo} che su \textit{Next.js}. Ciò si traduce in un'esperienza utente più coerente e in una semplificazione dello sviluppo e della manutenzione delle applicazioni.
+
+\subsection*{Struttura delle applicazioni}
+La struttura delle applicazioni segue una convenzione a \textit{folder}, dove ogni cartella rappresenta una pagina o un gruppo di pagine correlate.
+Questo approccio è comune sia in \textit{Expo} che in \textit{Next.js} e, grazie a \textit{Solito}, si è potuto sovrapporre queste strutture per mantenere la coerenza del codice e facilitare la navigazione \textit{cross-platform}
+ La struttura a \textit{folder} consente di organizzare il codice in modo modulare e riutilizzabile, migliorando la leggibilità e la gestione del progetto.
+
+Utilizzando queste tecniche, si può creare un sistema di navigazione che è efficace e intuitivo sia su piattaforme \textit{web} che su dispositivi \textit{mobile}, garantendo un'esperienza utente ottimale e una gestione efficiente del codice.
+
+
 \newpage

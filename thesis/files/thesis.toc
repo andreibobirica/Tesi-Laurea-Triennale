@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {3.2}\textit {Framework} in uso}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Tecnologie per \textit {monorepo}}{13}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Librerie utilizzate}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Strumenti di sviluppo}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Strumenti di sviluppo}{14}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Piattaforme di collaborazione e gestione}{15}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Piattaforme \textit {cloud} e \textit {DevOps}}{15}{section.3.7}%
 \contentsline {section}{\numberline {3.8}Strumenti di \textit {design}}{16}{section.3.8}%
@@ -75,16 +75,22 @@
 \contentsline {section}{\numberline {5.5}Stilizzazione dei Componenti}{59}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Esempi di Stilizzazione}{59}{subsection.5.5.1}%
 \contentsline {subsection}{\numberline {5.5.2}Benefici di Dripsy in Ambito Cross-Platform}{60}{subsection.5.5.2}%
-\contentsline {chapter}{\numberline {6}Studio fattibilità app in monorepo}{62}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Descrizione della monorepo}{62}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Descrizione routing e navigazione}{62}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Problemi riscontrati}{62}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Versionamento dipendenze}{62}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Isolamento delle dipendenze}{62}{subsection.6.3.2}%
-\contentsline {chapter}{\numberline {7}Conclusioni}{63}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{63}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{63}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{63}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Valutazione personale}{63}{section.7.4}%
-\contentsline {chapter}{Bibliografia}{i}{chapter*.22}%
-\contentsline {chapter}{Sitografia}{ii}{chapter*.23}%
+\contentsline {section}{\numberline {5.6}Descrizione routing e navigazione}{61}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Studio fattibilità app in monorepo}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Cos'è una monorepo}{63}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Gestione delle dipendenze}{65}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Gestione delle dipendenze decentralizzata}{65}{subsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.1}Problemi nella gestione delle dipendenze decentralizzata}{66}{subsubsection.6.2.1.1}%
+\contentsline {subsubsection}{\numberline {6.2.1.2}Problema delle peer dependencies}{67}{subsubsection.6.2.1.2}%
+\contentsline {subsubsection}{\numberline {6.2.1.3}Problemi nella Gestione delle Dipendenze di DDC Service}{68}{subsubsection.6.2.1.3}%
+\contentsline {subsection}{\numberline {6.2.2}Benefici della Gestione Centralizzata}{68}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Gestione delle Monorepo con Nx}{69}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Benefici di Nx}{69}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Necessità di Test Approfonditi}{70}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{71}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{71}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{71}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{71}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{71}{section.7.4}%
+\contentsline {chapter}{Bibliografia}{i}{chapter*.23}%
+\contentsline {chapter}{Sitografia}{ii}{chapter*.24}%
