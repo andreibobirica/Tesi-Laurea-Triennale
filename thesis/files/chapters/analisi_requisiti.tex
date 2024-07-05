@@ -18,8 +18,8 @@ In futuro l'applicazione necessiterà di un sistema per rendere un utente regist
 Date le premesse sulle caratteristiche degli utenti della applicazione, definiremo quindi solo due categorie di utenti: Utente Autenticato, Utente Non Autenticato.
 Ho individuato i seguenti attori:
 \begin{description}
-	\item[Utente Non Autenticato] L'Utente Non Autenticato è una tipologia di utente che o non si è ancora registrato e quindi non possiede delle credenziali oppure possiede delle credenziali ma deve ancora far il processo di \textit{login} detto \textit{signin}.
-	\item[Utente Autenticato] L'Utente Autenticato è una tipologia di utente che possiede delle credenziali valide e che ha completato con successo il processo di \textit{login} detto \textit{signin}.
+	\item[Utente Non Autenticato] L'Utente Non Autenticato è una tipologia di utente che o non si è ancora registrato e quindi non possiede delle credenziali oppure possiede delle credenziali ma deve ancora far il processo di \textit{login} detto \textit{sign in}.
+	\item[Utente Autenticato] L'Utente Autenticato è una tipologia di utente che possiede delle credenziali valide e che ha completato con successo il processo di \textit{login} detto \textit{sign in}.
 \end{description}
 
 \section{Casi d'uso}
@@ -28,7 +28,7 @@ I seguenti casi d'uso sono state formulati solo per le funzionalità che sono st
 \begin{usecase}{0}{Autenticazione}
     \usecaseactors{Utente Non Autenticato}
     \usecasepre{Un Utente Non Autenticato vuole accedere alle funzionalità della \textit{app}}
-    \usecasedesc{Questo scenario descrive un utente che vuole accedere alla funzionalità della \textit{app} ma che non ne ha i permessi, per tanto deve fare la registrazione (\textit{singup}) o il \textit{login} (\textit{singin})}
+    \usecasedesc{Questo scenario descrive un utente che vuole accedere alla funzionalità della \textit{app} ma che non ne ha i permessi, per tanto deve fare la registrazione (\textit{sing up}) o il \textit{login} (\textit{sign in})}
     \usecasepost{l'utente accede al processo di registrazione o di \textit{login}}
     \label{uc:uc_scenario_autenticazione}
 \end{usecase}
@@ -119,7 +119,7 @@ Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e 
     \endlastfoot
     RFN-1 & La funzionalità di autenticazione deve essere accessibile solo a Utenti Non Autenticati & UC0 \\
     \hline
-    RFN-2 & L'utente deve essere in grado di accedere alla pagina registrazione detta \textit{signup}. Questa pagina deve dare la possibilità di inserire i campi \textit{Name, Surname, Email, Password, Confirm Password, Company Name, Business Type, Address, Phone Number, Contry, Language} e scelte \textit{checkbox} GDPR e consenso Marketing & UC0.1 \\
+    RFN-2 & L'utente deve essere in grado di accedere alla pagina registrazione detta \textit{sign up}. Questa pagina deve dare la possibilità di inserire i campi \textit{Name, Surname, Email, Password, Confirm Password, Company Name, Business Type, Address, Phone Number, Contry, Language} e scelte \textit{checkbox} GDPR e consenso Marketing & UC0.1 \\
     \hline
     RFN-2.1 & Nel \textit{form} per la registrazione devono esserci filtri per il controllo dei dati immessi come \textit{input} & UC0.1 \\
     \hline

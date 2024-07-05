@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  30 JUN 2024 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  5 JUL 2024 19:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1235,7 +1235,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 33
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
-<img/ddc.png, id=462, 1130.2225pt x 963.6pt>
+<img/ddc.png, id=478, 1130.2225pt x 963.6pt>
 File: img/ddc.png Graphic file (type png)
 <use img/ddc.png>
 Package pdftex.def Info: img/ddc.png  used on input line 57.
@@ -1269,7 +1269,7 @@ Underfull \hbox (badness 2573) in paragraph at lines 150--151
 
 [21] [22] [23] [24] [25]) (./chapters/design_coding.tex
 Capitolo 5.
-<img/frontendbackend.png, id=604, 1188.0pt x 659.34pt>
+<img/frontendbackend.png, id=620, 1188.0pt x 659.34pt>
 File: img/frontendbackend.png Graphic file (type png)
 <use img/frontendbackend.png>
 Package pdftex.def Info: img/frontendbackend.png  used on input line 15.
@@ -1277,7 +1277,7 @@ Package pdftex.def Info: img/frontendbackend.png  used on input line 15.
 [26
 
  <./img/frontendbackend.png (PNG copy)>] [27] [28] [29] [30] [31] [32] [33] [34] [35]
-<img/restgraphql.png, id=659, 596.04124pt x 356.87968pt>
+<img/restgraphql.png, id=675, 596.04124pt x 356.87968pt>
 File: img/restgraphql.png Graphic file (type png)
 <use img/restgraphql.png>
 Package pdftex.def Info: img/restgraphql.png  used on input line 237.
@@ -1355,7 +1355,7 @@ Capitolo 6.
 [63
 
 ]
-<img/monorepocompare.png, id=787, 803.0pt x 298.11375pt>
+<img/monorepocompare.png, id=803, 803.0pt x 298.11375pt>
 File: img/monorepocompare.png Graphic file (type png)
 <use img/monorepocompare.png>
 Package pdftex.def Info: img/monorepocompare.png  used on input line 19.
@@ -1434,7 +1434,39 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 Capitolo 7.
 [71
 
-]) (./references/bibliography.tex
+]
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]|\T1/lmr/m/n/12 Architettura del-l'ap-pli-ca-
+ []
+
+<img/ProductPageWeb.png, id=841, 1145.78062pt x 738.25812pt>
+File: img/ProductPageWeb.png Graphic file (type png)
+<use img/ProductPageWeb.png>
+Package pdftex.def Info: img/ProductPageWeb.png  used on input line 99.
+(pdftex.def)             Requested size: 441.59021pt x 284.52756pt.
+
+Overfull \hbox (14.79886pt too wide) in paragraph at lines 99--100
+ [][] 
+ []
+
+[72]
+<img/ProductPageMobile.png, id=847, 571.13374pt x 944.52875pt>
+File: img/ProductPageMobile.png Graphic file (type png)
+<use img/ProductPageMobile.png>
+Package pdftex.def Info: img/ProductPageMobile.png  used on input line 106.
+(pdftex.def)             Requested size: 258.07101pt x 426.79134pt.
+ [73 <./img/ProductPageWeb.png>]
+<img/ServicedOvenWeb.png, id=853, 1686.3pt x 944.52875pt>
+File: img/ServicedOvenWeb.png Graphic file (type png)
+<use img/ServicedOvenWeb.png>
+Package pdftex.def Info: img/ServicedOvenWeb.png  used on input line 113.
+(pdftex.def)             Requested size: 507.9781pt x 284.52756pt.
+
+Overfull \hbox (81.18675pt too wide) in paragraph at lines 113--114
+ [][] 
+ []
+
+[74 <./img/ProductPageMobile.png>] [75 <./img/ServicedOvenWeb.png>]) (./references/bibliography.tex
 
 Package biblatex Warning: Type 'book' not found on input line 7.
 
@@ -1483,10 +1515,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40795 strings out of 474116
- 742687 string characters out of 5743682
+ 40854 strings out of 474116
+ 743996 string characters out of 5743682
  1959187 words of memory out of 5000000
- 62173 multiletter control sequences out of 15000+600000
+ 62220 multiletter control sequences out of 15000+600000
  674413 words of font info for 93 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  99i,12n,98p,2491b,3167s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1512,9 +1544,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on thesis.pdf (88 pages, 2582812 bytes).
+Output written on thesis.pdf (92 pages, 3239433 bytes).
 PDF statistics:
- 1296 PDF objects out of 1440 (max. 8388607)
- 275 named destinations out of 1000 (max. 500000)
- 838 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1347 PDF objects out of 1440 (max. 8388607)
+ 287 named destinations out of 1000 (max. 500000)
+ 877 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -13,7 +13,7 @@
 \contentsline {chapter}{\numberline {2}Descrizione dello stage}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Pianificazione}{6}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Attività}{6}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Obbiettivi}{8}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}Obiettivi}{8}{subsection.2.1.2}%
 \contentsline {subsubsection}{\numberline {2.1.2.1}Obiettivi obbligatori}{8}{subsubsection.2.1.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.2.2}Obiettivi desiderabili}{8}{subsubsection.2.1.2.2}%
 \contentsline {subsubsection}{\numberline {2.1.2.3}Obiettivi facoltativi}{8}{subsubsection.2.1.2.3}%
@@ -89,8 +89,11 @@
 \contentsline {section}{\numberline {6.5}Necessità di Test Approfonditi}{70}{section.6.5}%
 \contentsline {chapter}{\numberline {7}Conclusioni}{71}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Consuntivo finale}{71}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{71}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{71}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Valutazione personale}{71}{section.7.4}%
-\contentsline {chapter}{Bibliografia}{i}{chapter*.23}%
-\contentsline {chapter}{Sitografia}{ii}{chapter*.24}%
+\contentsline {subsection}{\numberline {7.1.1}Requisiti raggiunti}{71}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Raggiungimento degli obiettivi}{72}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Rettrospettiva}{73}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Applicazione consegnata}{73}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{75}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{75}{section.7.4}%
+\contentsline {chapter}{Bibliografia}{i}{chapter*.26}%
+\contentsline {chapter}{Sitografia}{ii}{chapter*.27}%
