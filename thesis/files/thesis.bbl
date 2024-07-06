@@ -73,6 +73,7 @@
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labeltitlesource}{title}
       \field{title}{Peer Dependencies}
+      \true{nocite}
       \verb{urlraw}
       \verb https://blog.bitsrc.io/understanding-peer-dependencies-in-javascript-dbdb4ab5a7be
       \endverb

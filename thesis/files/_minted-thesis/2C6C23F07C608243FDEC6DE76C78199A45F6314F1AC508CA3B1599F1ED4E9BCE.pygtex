@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{+w}{        }\PYG{c+c1}{// actions.js}
-\PYG{+w}{        }\PYG{k}{export}\PYG{+w}{ }\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{addItem}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n+nx}{item}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}\PYG{+w}{ }\PYG{p}{(\PYGZob{}}
-\PYG{+w}{            }\PYG{k+kr}{type}\PYG{o}{:}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}ADD\PYGZus{}ITEM\PYGZsq{}}\PYG{p}{,}
-\PYG{+w}{            }\PYG{n+nx}{payload}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{item}
-\PYG{+w}{        }\PYG{p}{\PYGZcb{});}
-\end{Verbatim}

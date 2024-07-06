@@ -1,6 +1,6 @@
-\chapter{Studio fattibilità app in monorepo}
+\chapter{Studio fattibilità app in \textit{monorepo}}
 \label{chap:studio_fattibilita}
-\section{Cos'è una monorepo}
+\section{Cos'è una \textit{monorepo}}
 Una \gls{monorepog}\glox è un singolo \gls{repog} che contiene più progetti, spesso correlati.
 Questo approccio consente di mantenere tutto il codice sorgente in un'unica posizione, facilitando la condivisione di codice e la gestione delle dipendenze.
 Una \textit{monorepo} può contenere applicazioni \gls{frontendg}\glox e \gls{backendg}\glox, librerie condivise e altre risorse comuni, permettendo una gestione centralizzata del progetto.
@@ -16,8 +16,8 @@ Utilizzare una \textit{monorepo}, quindi, offre il vantaggio di una maggiore int
 
 \begin{figure}[H]
 \centering
-\includegraphics[alt={Differenze tra monolith multi-repo e monorepo}, height=5cm]{img/monorepocompare.png}
-\caption{Monolith vs Multirepo vs Monorepo}
+\includegraphics[alt={Differenze tra \textit{monolith multi-repo e monorepo}}, height=5cm]{img/monorepocompare.png}
+\caption{\textit{Monolith vs Multirepo vs Monorepo}}
 \label{fig
 }
 \end{figure}
@@ -64,7 +64,7 @@ Per illustrare meglio questa struttura, possiamo fare riferimento al seguente al
 }
 
 
-\subsubsection{Problemi nella gestione delle dipendenze decentralizzata}
+\subsection{Problemi nella gestione delle dipendenze decentralizzata}
 
 Nella struttura sopra illustrata, vediamo che ogni applicazione e pacchetto ha il proprio file \texttt{package.json} per gestire le dipendenze.
 Questo può portare a diversi problemi:
@@ -83,7 +83,7 @@ Questo può portare a diversi problemi:
 \end{itemize}
 
 
-\subsubsection{Problema delle peer dependencies}
+\subsection{Problema delle peer dependencies}
 
 Un problema comune nelle \textit{monorepo} decentralizzate sono le \textit{peer dependencies}. 
 Le \textit{peer dependencies} sono dipendenze che devono essere installate esternamente al modulo che le richiede, ma devono essere presenti per evitare errori di \textit{runtime}.
@@ -92,7 +92,7 @@ Nel frattempo, l'applicazione B richiede \texttt{dependencyZ@2.0.0}, che richied
 Se entrambe le applicazioni sono nella stessa \textit{monorepo} decentralizzata e ciascuna gestisce le proprie dipendenze, potrebbero installare versioni incompatibili di \texttt{dependencyY}, causando errori durante l'esecuzione o comportamenti imprevisti.
 Questi problemi evidenziano le difficoltà di mantenere la coerenza e la compatibilità delle dipendenze in una \textit{monorepo} decentralizzata, spesso rendendo necessarie soluzioni più centralizzate per gestire con efficacia progetti complessi e scalabili.
 
-\subsubsection{Problemi nella Gestione delle Dipendenze di DDC Service}
+\subsection{Problemi nella Gestione delle Dipendenze di DDC Service}
 Nel momento in cui si è sviluppata \gls{ddcg}\glox non si sono tenute in considerazione le problematiche descritte nella gestione delle dipendenze decentralizzate.
 Nel momento in cui si è iniziato lo sviluppo di \gls{ddcserviceg}\glox, nelle prime settimane di sviluppo ci sono stati diversi problemi difficilmente individuabili.
 Ci sono stati alcuni momenti in cui durante l'installazione di moduli per \textit{DDC Service} questo rendeva inutilizzabile \textit{DDC}.
@@ -118,7 +118,7 @@ Adottare una gestione centralizzata delle dipendenze offre numerosi vantaggi che
     La gestione centralizzata riduce la duplicazione, rendendo il progetto più snello e facile da gestire.
 \end{itemize}
 
-\section{Gestione delle Monorepo con Nx}
+\section{Gestione delle \textit{Monorepo} con \textit{Nx}}
 \textit{Nx} è uno strumento avanzato per la gestione delle \textit{monorepo} che supporta la gestione centralizzata delle dipendenze.
 Utilizzando \textit{Nx}, è possibile garantire che tutte le dipendenze siano allineate, migliorando la consistenza e semplificando la gestione del progetto.
 Questo strumento offre soluzioni per i problemi comuni nella gestione decentralizzata, come i conflitti di versione, la duplicazione del codice e la manutenzione complessa.
@@ -136,12 +136,12 @@ I principali benefici di utilizzare \textit{Nx} includono:
     \item \textbf{Strumenti di Sviluppo Avanzati}: \textit{Nx} offre strumenti potenti per la gestione delle \textit{build}, dei test e delle dipendenze, migliorando l'efficienza dello sviluppo.
     Questi strumenti aiutano a gestire la complessità delle \textit{monorepo}, facilitando la \textit{build} e il \textit{testing} delle diverse parti del progetto.
     Nella gestione decentralizzata, questi processi possono essere disorganizzati e inefficienti.
-    \textit{Nx} centralizza e ottimizza questi processi, migliorando la produttività del team di sviluppo.
+    \textit{Nx} centralizza e ottimizza questi processi, migliorando la produttività del \textit{team} di sviluppo.
 \end{itemize}
 
 \section{Necessità di Test Approfonditi}
-In una monorepo con gestione centralizzata delle dipendenze, è essenziale implementare test di unità, di integrazione e \gls{e2e} per garantire che ogni modifica sostanziale non comprometta l'intero progetto.
-Dato che le dipendenze sono condivise tra tutti i progetti, una modifica in una dipendenza può avere effetti a catena su tutto il sistema, rendendo i test critici per mantenere la stabilità e la funzionalità della monorepo.
+In una \textit{monorepo} con gestione centralizzata delle dipendenze, è essenziale implementare test di unità, di integrazione e \gls{e2e} per garantire che ogni modifica sostanziale non comprometta l'intero progetto.
+Dato che le dipendenze sono condivise tra tutti i progetti, una modifica in una dipendenza può avere effetti a catena su tutto il sistema, rendendo i test critici per mantenere la stabilità e la funzionalità della \textit{monorepo}.
 Questo aiuterebbe nelle \textit{CI/CD} ma è necessario utilizzare test di unità o di integrazione.
 I classici problemi che possono verificarsi durante l'installazione o l'aggiornamento di una dipendenza sono quando un altro progetto diventa non funzionante.
 Per proteggersi da questo, si dovrebbe almeno testare che con ciascuna modifica gli altri progetti continuino a compilare il loro codice e ad eseguire correttamente.

@@ -13,7 +13,7 @@ Si analizzeranno le differenze tra le due parti, le tecnologie utilizzate e le r
 \begin{figure}[H]
     \centering
     \includegraphics[alt={Rappresentazione grafica delle tecnologie per backend e frontend}, height=5cm]{img/frontendbackend.png}
-    \caption{App moderne: Frontend e Backend}
+    \caption{Tecnologie utilizzate per {Frontend} e {Backend} di una \textit{app}}
     \label{fig:backendfrontend}
 \end{figure}
 
@@ -90,7 +90,7 @@ La disposizione delle \textit{directory} e dei file è progettata per riflettere
 
 
 \subsection{Monorepo}
-L'utilizzo di una \gls{monorepog}\glox è una strategia che permette di gestire tutto il codice del progetto in un unico \textit{repository}.
+L'utilizzo di una \gls{monorepog}\glox è una strategia che permette di gestire tutto il codice del progetto in un unico \gls{repog}\glox.
 Questo approccio offre numerosi vantaggi, tra cui:
 
 \begin{itemize}
@@ -99,8 +99,8 @@ Questo approccio offre numerosi vantaggi, tra cui:
     \item \textbf{Gestione delle Dipendenze}: Permette di avere una gestione migliore delle dipendenze, semplificando l'aggiornamento e la sincronizzazione delle librerie utilizzate.
     Questo è essenziale per mantenere un ambiente di sviluppo stabile e aggiornato, riducendo i conflitti e le incompatibilità tra le diverse parti del progetto.
     \item \textbf{Collaborazione}: Migliora la collaborazione tra i \textit{team}, offrendo una visione unificata del progetto e facilitando la revisione del codice.
-    I team possono lavorare contemporaneamente su diverse parti dell'applicazione, beneficiando della trasparenza e della coerenza del codice condiviso.
-    \item \textbf{Strumenti di Build e CI/CD}: Consente di configurare strumenti di build e \textit{pipeline CI/CD} in modo centralizzato, ottimizzando i processi di integrazione e distribuzione continua.
+    I \textit{team} possono lavorare contemporaneamente su diverse parti dell'applicazione, beneficiando della trasparenza e della coerenza del codice condiviso.
+    \item \textbf{Strumenti di Build e CI/CD}: Consente di configurare strumenti di build e \gls{cicdg}\glox in modo centralizzato, ottimizzando i processi di integrazione e distribuzione continua.
     Questo permette di automatizzare i test, il rilascio e il \textit{deploy} delle applicazioni \textit{DDC} e \textit{DDC Service}, assicurando che le nuove funzionalità e le correzioni di bug siano implementate rapidamente e senza intoppi.
 \end{itemize}
 Per questo progetto si è deciso di utilizzare la tecnologia \textit{monorepo} presente con \textit{npm workspaces}.
@@ -163,10 +163,10 @@ Le \textit{directory} principali sono suddivise come segue:
     \item \textbf{apps}: Contiene le applicazioni specifiche per \textit{DDC} e \textit{DDC Service}. 
     Ogni applicazione ha una \textit{directory} separata per le versioni \textit{Expo} e \textit{Next}.
     Le applicazioni contenute qui sono la struttura portante rispettivamente di \textit{Next} ed \textit{Expo}, e il codice contenuto dentro queste cartelle si occupa solamente di navigazione e \textit{routing}.
-    \item \textbf{packages}: Contiene le applicazioni ma anche i pacchetti condivisi tra le applicazioni, inclusi componenti, \textit{utils, hook} e il \textit{Design System}.
-    il package utils contiene funzioni utili per tutte le applicazioni che possono essere riutilizzate in ambito sviluppo multipiattaforma.
-    \item \textbf{scripts}: Contiene script per automatizzare varie attività di sviluppo e di \textit{deployment}.
-    \item \textbf{Configurazioni}: File di configurazione globali, come \textit{tsconfig.json}, \textit{package.json} e \texttt{.gitignore}.
+    \item \textbf{packages}: Contiene le applicazioni ma anche i pacchetti condivisi tra le applicazioni, inclusi componenti, \textit{utils, hooks} e il \textit{Design System}.
+    il package \textit{utils} contiene funzioni utili per tutte le applicazioni che possono essere riutilizzate in ambito sviluppo multipiattaforma.
+    \item \textbf{scripts}: Contiene \textit{script} per automatizzare varie attività di sviluppo e di \textit{deployment}.
+    \item \textbf{Configurazioni}: File di configurazione globali, come \textit{tsconfig.json}, \textit{package.json} e \textit{.gitignore}.
 \end{itemize}
 
 \subsection{Descrizione delle \textit{directory}}
@@ -251,7 +251,7 @@ POST /api/auth/login
 }
 \end{verbatim}
 
-Questo \textit{endpoint} accetta le credenziali dell'utente e, se valide, restituisce un \textit{token JWT} che viene utilizzato per autenticare le richieste successive.
+Questo \textit{endpoint} accetta le credenziali dell'utente e, se valide, restituisce un \gls{jwt}\glox che viene utilizzato per autenticare le richieste successive.
 
 \subsubsection{GraphQL}
 \textit{GraphQL} è un linguaggio di \textit{query} per le \textit{API} che offre una maggiore flessibilità rispetto a \textit{REST}.
@@ -366,7 +366,7 @@ Queste \textit{API} sono cachate su \textit{Redux} e possono essere chiamate sem
 \end{itemize}
 
 L'utilizzo di \textit{GraphQL Codegen} garantisce che il codice rimanga sincronizzato con lo schema \textit{GraphQL}, 
-riducendo il rischio di errori e migliorando la produttività del team di sviluppo.
+riducendo il rischio di errori e migliorando la produttività del \textit{team} di sviluppo.
 
 
 
@@ -443,13 +443,13 @@ Di seguito è riportato un esempio di un componente \textit{Text} a scopo dimost
 
 \begin{listing}[H]
     \begin{minted}{typescript}
-import \textit{React} from 'react';
+import React from 'react';
 import { Text as RNText, TextProps } from 'dripsy';
-import { useTheme } from '../Theme.tsx';
+import { useTheme } from '../Theme';
 
-const Text: React.FC<TextProps> = ({ style, ...props }) => {
-    const { colors } = useTheme();
-    return <RNText style={[{ color: colors.text }, style]} {...props} />;
+const Text = ({ style, ...props }: TextProps) => {
+  const { colors } = useTheme();
+  return <RNText style={[{ color: colors.text }, style]} {...props} />;
 };
 
 export default Text;
@@ -574,7 +574,7 @@ Analizziamo gli import per capire come è strutturato e quali funzionalità impl
 \begin{itemize}
     \item \textbf{Layout e Stile}
     \begin{itemize}
-        \item \texttt{useSx, View} da \texttt{dripsy}: Dripsy è una libreria per la gestione degli stili in \textit{React} Native, particolarmente utile per applicazioni cross-platform. \texttt{useSx} viene utilizzato per definire stili inline, mentre \texttt{View} è un contenitore per \textit{layout}.
+        \item \texttt{useSx, View} da \texttt{dripsy}: \textit{Dripsy} è una libreria per la gestione degli stili in \textit{React} Native, particolarmente utile per applicazioni \textit{cross-platform}. \texttt{useSx} viene utilizzato per definire stili inline, mentre \texttt{View} è un contenitore per \textit{layout}.
         \item \texttt{useStylesByVariants} da \texttt{@unox/hooks/useStylesByVariants}: Questo hook permette di gestire varianti di stili, rendendo più facile applicare stili diversi in base a determinate condizioni.
     \end{itemize}
     
@@ -592,23 +592,23 @@ Analizziamo gli import per capire come è strutturato e quali funzionalità impl
     
     \item \textbf{Autenticazione}
     \begin{itemize}
-        \item \texttt{useAuth} da \texttt{../useAuth}: Un hook personalizzato per gestire l'autenticazione, contiene funzioni per il login, logout e altre operazioni correlate.
+        \item \texttt{useAuth} da \texttt{../useAuth}: Un \textit{hook} personalizzato per gestire l'autenticazione, contiene funzioni per il \textit{login, logout} e altre operazioni correlate.
     \end{itemize}
     
     \item \textbf{Gestione dello Stato}
     \begin{itemize}
         \item \texttt{RootState} da \texttt{ddc-service/store}: Importa la definizione dello stato globale dell'applicazione gestito con \textit{Redux}.
-        \item \texttt{useSelector} da \texttt{react-redux}: Un hook per accedere al stato \textit{Redux}. In questo caso, viene utilizzato per ottenere l'errore di autenticazione (\texttt{AUTH\_SIGNIN\_ERROR}).
+        \item \texttt{useSelector} da \texttt{react-redux}: Un \textit{hook} per accedere al stato \textit{Redux}. In questo caso, viene utilizzato per ottenere l'errore di autenticazione (\texttt{AUTH\_SIGNIN\_ERROR}).
     \end{itemize}
     
     \item \textbf{Effetti e Stato Locale}
     \begin{itemize}
-        \item \texttt{useEffect, useState} da \texttt{react}: Hook per gestire gli effetti collaterali (\texttt{useEffect}) e lo stato locale (\texttt{useState}) del componente. \texttt{useState} viene utilizzato per gestire gli \textit{input} dell'email e della password.
+        \item \texttt{useEffect, useState} da \texttt{react}: \textit{Hook} per gestire gli effetti collaterali (\texttt{useEffect}) e lo stato locale (\texttt{useState}) del componente. \texttt{useState} viene utilizzato per gestire gli \textit{input} dell'email e della \textit{password}.
     \end{itemize}
     
     \item \textbf{Gestione degli Errori}
     \begin{itemize}
-        \item \texttt{useErrorModal} Hook per gestire e visualizzare errori tramite un modal.
+        \item \texttt{useErrorModal} \textit{Hook} per gestire e visualizzare errori tramite un \textit{modal}.
     \end{itemize}
 \end{itemize}
 
@@ -618,7 +618,7 @@ Il componente \textit{SignInForm} è progettato per gestire il processo di acces
 Gli utenti inseriscono le loro credenziali (email e password) nei campi di \textit{input}.
 Quando l'utente preme il pulsante di accesso, la funzione \textit{authSignIn} viene chiamata, utilizzando i dati di stato locali per tentare l'autenticazione.
 Il componente gestisce anche gli errori di autenticazione tramite \textit{Redux} e permette di visualizzare un messaggio di errore e un modal se l'autenticazione fallisce.
-Inoltre, utilizza il router per navigare tra le schermate in base ai risultati dell'autenticazione.
+Inoltre, utilizza il \textit{router} per navigare tra le schermate in base ai risultati dell'autenticazione.
 
 
 \subsubsection{ProductScreen}
@@ -663,13 +663,13 @@ export const ProductScreen = () => {
 \end{listing}
 
 Il componente \textit{ProductScreen} è una schermata complessa progettata per visualizzare i dettagli di un prodotto, 
-inclusi specifiche tecniche, area di download, riepilogo e altro.
-Analizziamo gli import per capire come è strutturato e quali funzionalità implementa:
+inclusi specifiche tecniche, area di \textit{download}, riepilogo e altro.
+Analizziamo gli \textit{import} per capire come è strutturato e quali funzionalità implementa:
 
 \begin{itemize}
     \item \textbf{Query e Stato dei Dati}
     \begin{itemize}
-        \item \texttt{useGetOvensQuery, useGetProductDetailsQuery, useSearchProductQuery} da \texttt{ddc-service/store/graphql/queryBaseApi}: Questi hook vengono utilizzati per eseguire \textit{query} \textit{GraphQL} e recuperare i dati necessari dall'API, 
+        \item \texttt{useGetOvensQuery, useGetProductDetailsQuery, useSearchProductQuery} da \texttt{ddc-service/store/graphql/queryBaseApi}: Questi hook vengono utilizzati per eseguire \textit{query} \textit{GraphQL} e recuperare i dati necessari dall'\textit{API}, 
         come dettagli del prodotto, risultati di ricerca e informazioni sui forni.
     \end{itemize}
 
@@ -680,30 +680,30 @@ Analizziamo gli import per capire come è strutturato e quali funzionalità impl
 
     \item \textbf{Navigazione e Routing}
     \begin{itemize}
-        \item \texttt{createParam} da \textit{solito}: Una utility per creare e gestire i parametri delle URL o parametri ricevuti navigando nelle schermate della app nativa.
-        \item \texttt{useRouter} da \textit{solito/router}: Un hook per gestire la navigazione all'interno dell'applicazione. \textit{push}, \textit{replace}, \textit{back} e \textit{parseNextPath} sono metodi per la gestione delle rotte.
-        \item \texttt{usePathname} da \textit{solito/navigation}: Un hook per ottenere il pathname corrente della navigazione.
+        \item \texttt{createParam} da \textit{solito}: Una \textit{utility} per creare e gestire i parametri delle URL o parametri ricevuti navigando nelle schermate della \textit{app nativa}.
+        \item \texttt{useRouter} da \textit{solito/router}: Un \textit{hook} per gestire la navigazione all'interno dell'applicazione. \textit{push}, \textit{replace}, \textit{back} e \textit{parseNextPath} sono metodi per la gestione delle rotte.
+        \item \texttt{usePathname} da \textit{solito/navigation}: Un \textit{hook} per ottenere il \textit{pathname} corrente della navigazione.
     \end{itemize}
 
     \item \textbf{Componenti Personalizzati}
     \begin{itemize}
-        \item \texttt{Breadcrumbs, BreadcrumpsCtrl} da \textit{../../components/Breadcrumbs}: Componenti per visualizzare e controllare i breadcrumb, facilitando la navigazione all'interno dell'applicazione.
-        \item \texttt{SearchBanner} da \textit{../../components/SearchBanner}: Un componente per visualizzare un banner di ricerca.
+        \item \texttt{Breadcrumbs, BreadcrumpsCtrl} da \textit{../../components/Breadcrumbs}: Componenti per visualizzare e controllare i \textit{breadcrumb}, facilitando la navigazione all'interno dell'applicazione.
+        \item \texttt{SearchBanner} da \textit{../../components/SearchBanner}: Un componente per visualizzare un \textit{banner} di ricerca.
         \item \texttt{TechnicalSpecsBand} da \textit{./components/TechnicalSpecsBand}: Un componente per visualizzare le specifiche tecniche del prodotto.
-        \item \texttt{DownloadArea} da \textit{./components/DownloadArea}: Un componente per visualizzare l'area di download del prodotto.
+        \item \texttt{DownloadArea} da \textit{./components/DownloadArea}: Un componente per visualizzare l'area di \textit{download} del prodotto.
         \item \texttt{ItemSummaryCard} da \textit{./components/ItemSummaryCard}: Un componente per visualizzare un riepilogo del prodotto.
-        \item \texttt{ContentCTA} da \textit{./components/ContentCTA}: Un componente per visualizzare una call-to-action legata al contenuto.
+        \item \texttt{ContentCTA} da \textit{./components/ContentCTA}: Un componente per visualizzare una \textit{call-to-action} legata al contenuto.
     \end{itemize}
 
     \item \textbf{Gestione della Responsività}
     \begin{itemize}
-        \item \textit{isWebPlatform, useIsDesktop, useIsLargeDesktop, useIsMobile, useIsSmallDesktop, useIsTablet} da \textit{@unox/utils/breakpoints}: Hook e utility per gestire la responsività dell'interfaccia utente su diverse piattaforme e dimensioni dello schermo.
+        \item \textit{isWebPlatform, useIsDesktop, useIsLargeDesktop, useIsMobile, useIsSmallDesktop, useIsTablet} da \textit{@unox/utils/breakpoints}: \textit{Hook e utility} per gestire la responsività dell'interfaccia utente su diverse piattaforme e dimensioni dello schermo.
     \end{itemize}
 
     \item \textbf{Gestione dello Stato e degli Effetti}
     \begin{itemize}
-        \item \texttt{useEffect} da \textit{react}: Un hook per gestire gli effetti collaterali nel componente. Utilizzato per eseguire azioni in risposta ai cambiamenti dello stato o delle props.
-        \item \texttt{productDetails} da \textit{app/store/slices/productDetails}: Un slice di \textit{Redux} per gestire lo stato dei dettagli del prodotto.
+        \item \texttt{useEffect} da \textit{react}: Un \textit{hook] per gestire gli effetti collaterali nel componente. Utilizzato per eseguire azioni in risposta ai cambiamenti dello stato o delle \textit{props}.
+        \item \texttt{productDetails} da \textit{app/store/slices/productDetails}: Un \textit{slice} di \textit{Redux} per gestire lo stato dei dettagli del prodotto.
     \end{itemize}
 \end{itemize}
 
@@ -711,8 +711,8 @@ Analizziamo gli import per capire come è strutturato e quali funzionalità impl
 
 Il componente \textit{ProductScreen} è progettato per visualizzare una schermata dettagliata di un prodotto.
 Utilizza varie \textit{query} \textit{GraphQL} per recuperare i dati necessari e li visualizza tramite componenti personalizzati come \textit{TechnicalSpecsBand}, \textit{DownloadArea}, e \textit{ItemSummaryCard}.
-La navigazione è gestita tramite \textit{useRouter} e \textit{createParam}, permettendo di passare parametri nella URL e navigare tra le schermate.
-Il componente è altamente responsivo, adattandosi a diverse dimensioni dello schermo grazie agli hook di breakpoints.
+La navigazione è gestita tramite \textit{useRouter} e \textit{createParam}, permettendo di passare parametri nella \textit{URL} e navigare tra le schermate.
+Il componente è altamente responsivo, adattandosi a diverse dimensioni dello schermo grazie agli \textit{hook di breakpoints}.
 
 
 \section{Gestione dello Stato}
@@ -720,14 +720,14 @@ Il componente è altamente responsivo, adattandosi a diverse dimensioni dello sc
 
 La gestione dello stato dell'applicazione è fondamentale per mantenere coerenza e prevedibilità nel comportamento dell'applicazione stessa.
 In questo progetto, si è utilizzato \textit{Redux} per gestire lo stato globale.
-Redux è una libreria JavaScript per la gestione dello stato delle applicazioni, che offre un pattern architetturale predicibile e centralizzato.
+\textit{Redux} è una libreria \textit{JavaScript} per la gestione dello stato delle applicazioni, che offre un pattern architetturale predicibile e centralizzato.
 Con \textit{Redux}, tutto lo stato dell'applicazione è mantenuto in un singolo \textit{store}, che funge da unica fonte di verità.
 
-Redux utilizza tre principi fondamentali:
+\textit{Redux} utilizza tre principi fondamentali:
 \begin{itemize}
     \item \textbf{Unico \textit{store}}: Lo stato dell'intera applicazione è memorizzato in un oggetto all'interno di un unico \textit{store}.
     \item \textbf{Stato di Sola Lettura}: L'unico modo per modificare lo stato è emettere un'azione, un oggetto che descrive cosa è accaduto.
-    \item \textbf{Modifiche con Funzioni Pure}: Per specificare come lo stato si trasforma a seguito delle azioni, si utilizzano pure functions chiamate riduttori.
+    \item \textbf{Modifiche con Funzioni Pure}: Per specificare come lo stato si trasforma a seguito delle azioni, si utilizzano \textit{pure functions} chiamate \textit{riduttori}.
 \end{itemize}
 
 \subsection{Azioni e Riduttori}
@@ -750,7 +750,7 @@ Esempio di un'azione:
     \label{listing:azione}
 \end{listing}
 
-I riduttori (reducers) sono pure functions che specificano come lo stato dell'applicazione cambia in risposta a un'azione.
+I riduttori (\textit{reducers}) sono \textit{pure functions} che specificano come lo stato dell'applicazione cambia in risposta a un'azione.
 I riduttori prendono lo stato corrente e l'azione come argomenti, e restituiscono un nuovo stato.
 
 Esempio di un riduttore:
@@ -834,7 +834,7 @@ Esempio di configurazione dello \textit{store} con \textit{middleware}:
 \label{subsec:redux_toolkit}
 
 \textit{Redux Toolkit} è un pacchetto ufficiale consigliato da \textit{Redux} per semplificare il modo in cui si scrivono logiche \textit{Redux}, riducendo il boilerplate e migliorando la leggibilità del codice.
-Include diversi strumenti utili, tra cui un set di utility per creare azioni e riduttori, un middleware preconfigurato (Redux Thunk), e strumenti per gestire lo \textit{store} \textit{Redux} in modo più efficiente.
+Include diversi strumenti utili, tra cui un set di utility per creare azioni e riduttori, un middleware preconfigurato (\textit{Redux Thunk}), e strumenti per gestire lo \textit{store} \textit{Redux} in modo più efficiente.
 
 \subsubsection{Caratteristiche Principali di \textit{Redux} Toolkit}
 
@@ -951,9 +951,9 @@ Nell'esempio sopra, il componente \textit{`Button} utilizza \textit{View} da \te
 Il codice \textit{sx} consente di specificare proprietà come \textit{backgroundColor}, \textit{padding}, \textit{borderRadius} in un formato simile a \textit{CSS}, 
 rendendo facile aggiungere e modificare stili in modo dichiarativo.
 
-\subsection{Benefici di Dripsy in Ambito Cross-Platform}
+\subsection{Benefici di Dripsy in Ambito \textit{cross-platform}}
 
-\textit{Dripsy} si rivela particolarmente utile in ambito cross-platform per diversi motivi:
+\textit{Dripsy} si rivela particolarmente utile in ambito \textit{cross-platform} per diversi motivi:
 
 \begin{itemize}
     \item \textbf{Sintassi Dichiarativa}: La sintassi simile a \textit{CSS} di \textit{Dripsy} facilita la definizione degli stili, 
