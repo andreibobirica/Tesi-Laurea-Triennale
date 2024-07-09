@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber thesis"] 1720503731.70708 "thesis.bcf" "thesis.bbl" "thesis" 1720506192.32585 0
+["biber thesis"] 1720506244.12628 "thesis.bcf" "thesis.bbl" "thesis" 1720506271.04366 0
   "references/bibliography.bib" 1719764683.45792 1099 5b0f87cf13bce81204fb01320ffcf99d ""
-  "thesis.bcf" 1720506191.54618 108251 322c3feeb94637c6a7311b2c729d8dac "pdflatex"
+  "thesis.bcf" 1720506270.2564 108251 322c3feeb94637c6a7311b2c729d8dac "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
   (rewritten before read)
-["pdflatex"] 1720506182.60586 "/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex" "thesis.pdf" "thesis" 1720506192.32657 2
+["pdflatex"] 1720506260.60073 "/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex" "thesis.pdf" "thesis" 1720506271.04432 2
   "/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex" 1720506177.15711 1109 5fbbd4ae5031375fd77a49737e0a630d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
@@ -28,6 +28,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm" 1254269338 17144 271aaf9ebb339934b04110dc5211fba4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm" 1254269338 12216 265ff4deab161a560d37046d13363b8c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtk10.tfm" 1254269338 1368 5bfeb1cf8f9f0acdb7436bfaa8e0da4e ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm" 1254269338 1372 2ef2c2b492b3c4cd7879fe083abbb061 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm" 1254269338 1368 6a60e6a5e029141041d64d339b87e533 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtt8.tfm" 1254269338 1380 64228d979098ac090aa3f98d5aa8ad3e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/lm/ec-lmtti10.tfm" 1254269338 1372 0dcee1a56926aed3dd9ded91b7563563 ""
@@ -64,6 +65,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb" 1255129361 109265 32320cb6133d4d76bf83e27b5eb4009b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb" 1255129361 125209 a5bd29c5b5feb791d0332220e4a79275 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb" 1255129361 117319 7f8361f845845ce6d5b36cbd9f9cf377 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb" 1255129361 113227 1010e11451afc2822c95dae77c390042 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb" 1255129361 110323 92daea7ca7b4120bd2b54b047c93be27 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb" 1255129361 115291 2ae7034c644e971beb573b1e6606f863 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb" 1255129361 98822 859130196f7a6d2d1173200c66afbcff ""
@@ -282,7 +284,7 @@
   "img/logo_unipd.jpeg" 1713853174 1207401 9753bd6bceab45bea6d330d00a4b9437 ""
   "img/monorepocompare.png" 1719764888.66823 21089 a7d5e00059ef065e890e3a965225ca56 ""
   "img/restgraphql.png" 1719757358 95758 abfc3113d7e6fd853d54dc9096d175ad ""
-  "pdfa.xmpi" 1720506184.35206 5042 f1e3a0f7c5545705ad5c458e4fa48194 "pdflatex"
+  "pdfa.xmpi" 1720506262.47204 5042 b0049919659cf887b5ff73341169d3b5 "pdflatex"
   "preface/1_title_page.tex" 1718752021.49279 1325 b8a3a860b66d0fa0b019c9f002bc431e ""
   "preface/2_copyright.tex" 1713853174 198 75f1087650b19e417982a645602987ec ""
   "preface/3_acknowledgements.tex" 1719704873.70762 1719 af0ce141b8b8e2aa90c1ef25c66f498a ""
@@ -290,17 +292,17 @@
   "preface/5_table_of_contents.tex" 1713853174 612 63fae362ee8855d0297488d0ce34cd62 ""
   "references/glossary_acronyms.tex" 1720503291.04513 8037 92510934b377297a3f9c917fff8eded9 ""
   "references/webliography.tex" 1720505580.62075 154 750a992debe74ed20dbb9c2df131a3f8 ""
-  "thesis.acn" 1720506191.55022 733 177e80abe9a606a57eb6c1b3a28ae188 "pdflatex"
-  "thesis.acr" 1720506187.16309 1024 f789f469987db0405566ed2da14e892e ""
-  "thesis.aux" 1720506191.48907 38025 f602b60209e651abc8e6b9fad696c271 "pdflatex"
-  "thesis.bbl" 0 -1 0 "biber thesis"
-  "thesis.glo" 1720506191.55003 5267 32bf32ac47a6876da6f1a12a9a2c2317 "pdflatex"
-  "thesis.gls" 1720506186.82901 4647 ef3f21cb10969abd51342ad5489519e1 ""
-  "thesis.lof" 1720506191.55058 1258 15566a8db9f89fca66d3b0e9f1abb565 "pdflatex"
-  "thesis.lol" 1720506191.55081 926 34f6899f211ddc849a310aef694fc6c5 "pdflatex"
-  "thesis.lot" 1720506191.55069 945 36db89b2b39d5a0ca4d5ff103bfaf6c2 "pdflatex"
+  "thesis.acn" 1720506270.26032 733 177e80abe9a606a57eb6c1b3a28ae188 "pdflatex"
+  "thesis.acr" 1720506265.39104 1024 f789f469987db0405566ed2da14e892e ""
+  "thesis.aux" 1720506270.18325 39292 2216689a7384ce9d53e2a7ae17e3fce3 "pdflatex"
+  "thesis.bbl" 1720506249.50077 4050 04e80d42c2444ae4d0f309cc1b1b5198 "biber thesis"
+  "thesis.glo" 1720506270.26015 5267 32bf32ac47a6876da6f1a12a9a2c2317 "pdflatex"
+  "thesis.gls" 1720506265.05232 4647 ef3f21cb10969abd51342ad5489519e1 ""
+  "thesis.lof" 1720506270.26066 1258 15566a8db9f89fca66d3b0e9f1abb565 "pdflatex"
+  "thesis.lol" 1720506270.26086 926 34f6899f211ddc849a310aef694fc6c5 "pdflatex"
+  "thesis.lot" 1720506270.26078 945 36db89b2b39d5a0ca4d5ff103bfaf6c2 "pdflatex"
   "thesis.tex" 1720506177.15711 1109 5fbbd4ae5031375fd77a49737e0a630d ""
-  "thesis.toc" 1720506191.55039 8095 82ec060ee458a5b50b1cfd093ef19144 "pdflatex"
+  "thesis.toc" 1720506270.2605 8095 82ec060ee458a5b50b1cfd093ef19144 "pdflatex"
   (generated)
   "pdfa.xmpi"
   "thesis.acn"
