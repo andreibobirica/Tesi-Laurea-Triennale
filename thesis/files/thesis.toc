@@ -1,7 +1,7 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
-\contentsline {chapter}{Acronimi e abbreviazioni}{viii}{section*.14}%
-\contentsline {chapter}{Glossario}{ix}{section*.16}%
+\contentsline {chapter}{Acronimi e abbreviazioni}{xi}{section*.14}%
+\contentsline {chapter}{Glossario}{xii}{section*.16}%
 \contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Convenzioni tipografiche}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Organizzazione del testo}{1}{section.1.2}%
@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {5.1.5}Struttura delle Applicazioni}{30}{subsection.5.1.5}%
 \contentsline {subsection}{\numberline {5.1.6}Monorepo}{30}{subsection.5.1.6}%
 \contentsline {subsubsection}{\numberline {5.1.6.1}Struttura delle \textit {directory}}{32}{subsubsection.5.1.6.1}%
-\contentsline {subsection}{\numberline {5.1.7}Visione Generale}{32}{subsection.5.1.7}%
+\contentsline {subsection}{\numberline {5.1.7}Visione Generale}{33}{subsection.5.1.7}%
 \contentsline {subsection}{\numberline {5.1.8}Descrizione delle \textit {directory}}{33}{subsection.5.1.8}%
 \contentsline {subsection}{\numberline {5.1.9}Gestione delle Dipendenze}{35}{subsection.5.1.9}%
 \contentsline {section}{\numberline {5.2}Comunicazione}{36}{section.5.2}%
@@ -66,25 +66,35 @@
 \contentsline {subsection}{\numberline {5.3.3}Esempi di Componenti Compositi}{47}{subsection.5.3.3}%
 \contentsline {subsubsection}{\numberline {5.3.3.1}SignInForm}{48}{subsubsection.5.3.3.1}%
 \contentsline {subsubsection}{\numberline {5.3.3.2}ProductScreen}{51}{subsubsection.5.3.3.2}%
-\contentsline {chapter}{\numberline {6}Studio fattibilità app in \textit {monorepo}}{54}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Cos'è una \textit {monorepo}}{54}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Gestione delle dipendenze}{56}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Gestione delle dipendenze decentralizzata}{56}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Problemi nella gestione delle dipendenze decentralizzata}{57}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Problema delle peer dependencies}{58}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Problemi nella Gestione delle Dipendenze di DDC Service}{59}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Benefici della Gestione Centralizzata}{60}{subsection.6.2.5}%
-\contentsline {section}{\numberline {6.3}Gestione delle \textit {Monorepo} con \textit {Nx}}{60}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Benefici di Nx}{61}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Necessità di Test Approfonditi}{61}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Conclusioni}{63}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{63}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Requisiti raggiunti}{64}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Raggiungimento degli obiettivi}{65}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Applicazione consegnata}{65}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{68}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Competenze Organizzative}{68}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Gestione delle \textit {Monorepo}}{69}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Tecnologie Principali Apprese}{70}{subsection.7.3.3}%
-\contentsline {section}{\numberline {7.4}Valutazione personale}{71}{section.7.4}%
+\contentsline {section}{\numberline {5.4}Gestione dello Stato}{54}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Azioni e Riduttori}{54}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Middleware}{55}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Gestione dello Stato con \textit {Redux} Toolkit}{57}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}Caratteristiche Principali di \textit {Redux} Toolkit}{57}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}Esempio di Utilizzo di \textit {Redux} Toolkit}{58}{subsubsection.5.4.3.2}%
+\contentsline {section}{\numberline {5.5}Stilizzazione dei Componenti}{59}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Esempi di Stilizzazione}{59}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Benefici di Dripsy in Ambito \textit {cross-platform}}{60}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Descrizione routing e navigazione}{61}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Studio fattibilità app in \textit {monorepo}}{63}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Cos'è una \textit {monorepo}}{63}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Gestione delle dipendenze}{65}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Gestione delle dipendenze decentralizzata}{65}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Problemi nella gestione delle dipendenze decentralizzata}{66}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Problema delle peer dependencies}{67}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Problemi nella Gestione delle Dipendenze di DDC Service}{68}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Benefici della Gestione Centralizzata}{68}{subsection.6.2.5}%
+\contentsline {section}{\numberline {6.3}Gestione delle \textit {Monorepo} con \textit {Nx}}{69}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Benefici di Nx}{69}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Necessità di Test Approfonditi}{70}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{71}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{71}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Requisiti raggiunti}{72}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Raggiungimento degli obiettivi}{73}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Applicazione consegnata}{73}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{76}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Competenze Organizzative}{76}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Gestione delle \textit {Monorepo}}{77}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Tecnologie Principali Apprese}{78}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{78}{section.7.4}%
 \contentsline {chapter}{Sitografia}{i}{chapter*.26}%

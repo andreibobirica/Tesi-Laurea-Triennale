@@ -152,6 +152,7 @@ La struttura del progetto è organizzata come segue:
 .2 node\_modules.
 }}
 
+\pagebreak
 \subsection{Visione Generale}
 La struttura del progetto è organizzata per supportare lo sviluppo e la gestione di quattro applicazioni principali: 
 due applicazioni \textit{DDC} (una per \textit{Expo} e una per \textit{Next}) e due applicazioni \textit{DDC Service} (una per \textit{Expo} e una per \textit{Next}).
@@ -203,7 +204,7 @@ Le \textit{directory} principali sono suddivise come segue:
         \item \texttt{node\_modules}: \textit{directory} generata automaticamente che contiene tutte le dipendenze installate.
     \end{itemize}
 \end{itemize}
-\pagebreak
+
 \subsection{Gestione delle Dipendenze}
 All'interno del file \textit{package.json} situato nella \textit{root} del progetto, sono configurati diversi parametri che definiscono la struttura della \textit{monorepo}. 
 In particolare, c'è una suddivisione tra due principali categorie di \textit{workspaces}: \textit{apps} e \textit{packages}.
@@ -702,7 +703,7 @@ Analizziamo gli \textit{import} per capire come è strutturato e quali funzional
 
     \item \textbf{Gestione dello Stato e degli Effetti}
     \begin{itemize}
-        \item \texttt{useEffect} da \textit{react}: Un \textit{hook] per gestire gli effetti collaterali nel componente. Utilizzato per eseguire azioni in risposta ai cambiamenti dello stato o delle \textit{props}.
+        \item \texttt{useEffect} da \textit{react}: Un \textit{hook} per gestire gli effetti collaterali nel componente. Utilizzato per eseguire azioni in risposta ai cambiamenti dello stato o delle \textit{props}.
         \item \texttt{productDetails} da \textit{app/store/slices/productDetails}: Un \textit{slice} di \textit{Redux} per gestire lo stato dei dettagli del prodotto.
     \end{itemize}
 \end{itemize}
