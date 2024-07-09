@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  7 JUL 2024 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  9 JUL 2024 08:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1091,11 +1091,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout5 = `thesis.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' found.
- (./thesis.bbl)
+Package biblatex Info: ... file 'thesis.bbl' not found.
+
+No file thesis.bbl.
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1175,42 +1175,47 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 11.
 ) (./preface/5_table_of_contents.tex [4
 
-] (./thesis.toc [5
-
-
-] [6] [7])
+]
+No file thesis.toc.
 \tf@toc=\write11
 \openout11 = `thesis.toc'.
 
- [8] (./thesis.lof)
+[5
+
+
+]
+No file thesis.lof.
 \tf@lof=\write12
 \openout12 = `thesis.lof'.
 
- (./thesis.lot)
+No file thesis.lot.
 \tf@lot=\write13
 \openout13 = `thesis.lot'.
 
- [9
+[6
 
 ] (./thesis.lol)
 \tf@lol=\write14
 \openout14 = `thesis.lol'.
 
- [10
+ [7
 
-]) (./thesis.acr) (./thesis.gls [11
-
-
-
-] [12
+]) (./thesis.acr) (./thesis.gls [8
 
 
-] [13]) [14]
+
+] [9
+
+
+] [10]) [11]
 Package hyperref Info: Option `pageanchor' set `false' on input line 25.
- [15
+ [12
 
 ] (./chapters/introduzione.tex
 Capitolo 1.
+
+LaTeX Warning: Hyper reference `chap:introduzione' on page 1 undefined on input line 20.
+
 
 Overfull \hbox (2.7511pt too wide) in paragraph at lines 20--21
 []\T1/lmr/m/n/12 Il ca-pi-to-lo in-tro-dut-ti-vo pre-sen-ta una pa-no-ra-mi-ca del-l'a-zien-da UNOX
@@ -1222,6 +1227,24 @@ Overfull \hbox (2.7511pt too wide) in paragraph at lines 20--21
 
 ]
 
+LaTeX Warning: Hyper reference `chap:stage_descrizione' on page 2 undefined on input line 21.
+
+
+LaTeX Warning: Hyper reference `chap:tecnologie_utilizzate' on page 2 undefined on input line 22.
+
+
+LaTeX Warning: Hyper reference `chap:analisi_requisiti' on page 2 undefined on input line 23.
+
+
+LaTeX Warning: Hyper reference `chap:design_coding' on page 2 undefined on input line 24.
+
+
+LaTeX Warning: Hyper reference `chap:studio_fattibilita' on page 2 undefined on input line 25.
+
+
+LaTeX Warning: Hyper reference `chap:conclusioni' on page 2 undefined on input line 26.
+
+
 LaTeX Warning: Hyper reference `cap:bibliography' on page 2 undefined on input line 27.
 
 [2]
@@ -1231,11 +1254,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 33.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 33.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 33.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3]
-<img/ddc.png, id=466, 1130.2225pt x 963.6pt>
+
+
+LaTeX Warning: Citation 'site:unox_sito' on page 3 undefined on input line 33.
+
+[3]
+<img/ddc.png, id=237, 1130.2225pt x 963.6pt>
 File: img/ddc.png Graphic file (type png)
 <use img/ddc.png>
 Package pdftex.def Info: img/ddc.png  used on input line 57.
@@ -1248,7 +1272,17 @@ Capitolo 2.
 Capitolo 3.
 [11
 
-] [12] [13] [14] [15] [16]) (./chapters/analisi_requisiti.tex
+] [12]
+
+LaTeX Warning: Citation 'site:solito' on page 13 undefined on input line 37.
+
+
+LaTeX Warning: Citation 'site:moti' on page 13 undefined on input line 39.
+
+
+LaTeX Warning: Citation 'site:dripsy' on page 13 undefined on input line 41.
+
+[13] [14] [15] [16]) (./chapters/analisi_requisiti.tex
 Capitolo 4.
 [17
 
@@ -1258,6 +1292,16 @@ Overfull \hbox (9.54607pt too wide) in paragraph at lines 71--79
  []
 
 [20]
+
+LaTeX Warning: Reference `tab:requisiti_funzionali' on page 21 undefined on input line 93.
+
+
+LaTeX Warning: Reference `tab:requisiti_qualitativi' on page 21 undefined on input line 93.
+
+
+LaTeX Warning: Reference `tab:requisiti_vincolo' on page 21 undefined on input line 93.
+
+
 Underfull \hbox (badness 2573) in paragraph at lines 148--149
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
@@ -1267,17 +1311,42 @@ Underfull \hbox (badness 2573) in paragraph at lines 150--151
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
 
-[21] [22] [23] [24] [25]) (./chapters/design_coding.tex
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.1 on input line 155.
+
+[21] [22] [23] [24]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.2 on input line 189.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 4.3 on input line 221.
+
+[25]) (./chapters/design_coding.tex
 Capitolo 5.
-<img/frontendbackend.png, id=608, 1188.0pt x 659.34pt>
+<img/frontendbackend.png, id=403, 1188.0pt x 659.34pt>
 File: img/frontendbackend.png Graphic file (type png)
 <use img/frontendbackend.png>
 Package pdftex.def Info: img/frontendbackend.png  used on input line 15.
 (pdftex.def)             Requested size: 256.3214pt x 142.26378pt.
 [26
 
- <./img/frontendbackend.png (PNG copy)>] [27] [28] [29] [30] [31] [32] [33] [34] [35]
-<img/restgraphql.png, id=664, 596.04124pt x 356.87968pt>
+ <./img/frontendbackend.png (PNG copy)>] [27] [28] [29] [30] [31]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 153.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+LaTeX Warning: Citation 'site:monorepomigration' on page 32 undefined on input line 159.
+
+[32] [33] [34]
+
+LaTeX Warning: Citation 'site:monorepomigration' on page 35 undefined on input line 220.
+
+[35]
+<img/restgraphql.png, id=466, 596.04124pt x 356.87968pt>
 File: img/restgraphql.png Graphic file (type png)
 <use img/restgraphql.png>
 Package pdftex.def Info: img/restgraphql.png  used on input line 237.
@@ -1299,7 +1368,11 @@ Package hyperref Info: bookmark level for unknown listing defaults to 0 on input
  (./_minted-thesis/38969297BC5C7052DDFAA99D021AC67445F6314F1AC508CA3B1599F1ED4E9BCE.pygtex)
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [40] [41] [42]
+ (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [40] [41]
+
+LaTeX Warning: Citation 'site:reactnativecookieauth' on page 42 undefined on input line 415.
+
+[42]
 \openout6 = `thesis.pyg'.
 
  (./_minted-thesis/2C63BCFC95C34DB3DF6F7E919C76507245F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [43] [44]
@@ -1352,7 +1425,7 @@ Capitolo 6.
 [54
 
 ]
-<img/monorepocompare.png, id=755, 803.0pt x 298.11375pt>
+<img/monorepocompare.png, id=580, 803.0pt x 298.11375pt>
 File: img/monorepocompare.png Graphic file (type png)
 <use img/monorepocompare.png>
 Package pdftex.def Info: img/monorepocompare.png  used on input line 19.
@@ -1438,12 +1511,21 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 Capitolo 7.
 [63
 
-] [64]
+]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.1 on input line 64.
+
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []|\T1/lmr/m/n/12 Architettura del-l'ap-pli-ca-
  []
 
-<img/ProductPageWeb.png, id=806, 1145.78062pt x 738.25812pt>
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 7.2 on input line 106.
+
+<img/ProductPageWeb.png, id=645, 1145.78062pt x 738.25812pt>
 File: img/ProductPageWeb.png Graphic file (type png)
 <use img/ProductPageWeb.png>
 Package pdftex.def Info: img/ProductPageWeb.png  used on input line 121.
@@ -1454,13 +1536,13 @@ Overfull \hbox (14.79886pt too wide) in paragraph at lines 121--122
  []
 
 [65]
-<img/ProductPageMobile.png, id=812, 571.13374pt x 944.52875pt>
+<img/ProductPageMobile.png, id=653, 571.13374pt x 944.52875pt>
 File: img/ProductPageMobile.png Graphic file (type png)
 <use img/ProductPageMobile.png>
 Package pdftex.def Info: img/ProductPageMobile.png  used on input line 130.
 (pdftex.def)             Requested size: 258.07101pt x 426.79134pt.
  [66 <./img/ProductPageWeb.png>]
-<img/ServicedOvenWeb.png, id=819, 1686.3pt x 944.52875pt>
+<img/ServicedOvenWeb.png, id=660, 1686.3pt x 944.52875pt>
 File: img/ServicedOvenWeb.png Graphic file (type png)
 <use img/ServicedOvenWeb.png>
 Package pdftex.def Info: img/ServicedOvenWeb.png  used on input line 140.
@@ -1470,96 +1552,44 @@ Overfull \hbox (81.18675pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
-[67 <./img/ProductPageMobile.png>] [68 <./img/ServicedOvenWeb.png>] [69]
+[67 <./img/ProductPageMobile.png>]
+
+LaTeX Warning: Reference `fig:servicedovenweb' on page 68 undefined on input line 145.
+
+[68 <./img/ServicedOvenWeb.png>] [69]
 Overfull \hbox (34.19156pt too wide) in paragraph at lines 188--191
 []\T1/lmr/bx/n/12 Dripsy/Solito/Moti\T1/lmr/m/n/12 : Ho sco-per-to e uti-liz-za-to lo \T1/lmr/m/it/12 stack Drip-sy/Solito/Moti
  []
 
 [70] [71] [72]) (./references/webliography.tex
-Overfull \hbox (20.54402pt too wide) in paragraph at lines 6--6
-\T1/lmtt/m/n/12 repository -[] to -[] a -[] monorepo -[] using -[] npm -[] 7 -[] workspaces -[] 27012a100269$[][]
- []
+
+Package biblatex Warning: Type 'online' not found on input line 6.
 
 
-Overfull \hbox (37.54836pt too wide) in paragraph at lines 6--6
-[][]\T1/lmr/m/it/12 React Na-ti-ve Coo-kie Au-then-ti-ca-tion\T1/lmr/m/n/12 . \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]$\T1/lmtt/m/n/12 https : / / javascript . plainenglish .
- []
+LaTeX Warning: Empty bibliography on input line 6.
 
 )
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \end{document}
-                    [1
 
+! LaTeX Error: File `references/bliography.tex' not found.
 
-]
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
-/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex:39: LaTeX Error: \begin{itemize} on input line 704 ended by \end{document}.
+Enter file name: 
+/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex:39: Emergency stop.
+<read *> 
+         
+l.39     \input{references/bliography}
+                                      ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./thesis.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
- ***********
-
-
-LaTeX Warning: There were undefined references.
-
-runsystem(rm thesis.pyg)...executed.
-
-Package logreq Info: Writing requests to 'thesis.run.xml'.
-\openout1 = `thesis.run.xml'.
-
- )
-(\end occurred inside a group at level 2)
-
-### semi simple group (level 2) entered at line 704 (\begingroup)
-### semi simple group (level 1) entered at line 669 (\begingroup)
-### bottom level 
+ 
 Here is how much of TeX's memory you used:
- 40761 strings out of 474116
- 738981 string characters out of 5743682
- 1960187 words of memory out of 5000000
- 62166 multiletter control sequences out of 15000+600000
- 678684 words of font info for 94 fonts, out of 8000000 for 9000
+ 40534 strings out of 474116
+ 734269 string characters out of 5743682
+ 1959187 words of memory out of 5000000
+ 61970 multiletter control sequences out of 15000+600000
+ 674302 words of font info for 92 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,12n,98p,2491b,3167s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on thesis.pdf (88 pages, 3227123 bytes).
-PDF statistics:
- 1299 PDF objects out of 1440 (max. 8388607)
- 271 named destinations out of 1000 (max. 500000)
- 805 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 99i,12n,98p,2491b,2535s stack positions out of 10000i,1000n,20000p,200000b,200000s
+/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex:39:  ==> Fatal error occurred, no output PDF file produced!
