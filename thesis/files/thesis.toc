@@ -74,27 +74,27 @@
 \contentsline {subsubsection}{\numberline {5.4.3.2}Esempio di Utilizzo di \textit {Redux} Toolkit}{58}{subsubsection.5.4.3.2}%
 \contentsline {section}{\numberline {5.5}Stilizzazione dei Componenti}{59}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}Esempi di Stilizzazione}{59}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Benefici di Dripsy in Ambito \textit {cross-platform}}{60}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.2}Benefici di Dripsy in Ambito \textit {cross-platform}}{61}{subsection.5.5.2}%
 \contentsline {section}{\numberline {5.6}Descrizione routing e navigazione}{61}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Studio fattibilità app in \textit {monorepo}}{63}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Cos'è una \textit {monorepo}}{63}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Gestione delle dipendenze}{65}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Gestione delle dipendenze decentralizzata}{65}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}Gestione delle dipendenze decentralizzata}{66}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Problemi nella gestione delle dipendenze decentralizzata}{66}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Problema delle peer dependencies}{67}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.3}Problema delle peer dependencies}{68}{subsection.6.2.3}%
 \contentsline {subsection}{\numberline {6.2.4}Problemi nella Gestione delle Dipendenze di DDC Service}{68}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Benefici della Gestione Centralizzata}{68}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.5}Benefici della Gestione Centralizzata}{69}{subsection.6.2.5}%
 \contentsline {section}{\numberline {6.3}Gestione delle \textit {Monorepo} con \textit {Nx}}{69}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Benefici di Nx}{69}{section.6.4}%
+\contentsline {section}{\numberline {6.4}Benefici di Nx}{70}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Necessità di Test Approfonditi}{70}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Conclusioni}{71}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Consuntivo finale}{71}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Requisiti raggiunti}{72}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Raggiungimento degli obiettivi}{73}{subsection.7.1.2}%
-\contentsline {section}{\numberline {7.2}Applicazione consegnata}{73}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{76}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Competenze Organizzative}{76}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Gestione delle \textit {Monorepo}}{77}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Tecnologie Principali Apprese}{78}{subsection.7.3.3}%
-\contentsline {section}{\numberline {7.4}Valutazione personale}{78}{section.7.4}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{72}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{72}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Requisiti raggiunti}{73}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Raggiungimento degli obiettivi}{74}{subsection.7.1.2}%
+\contentsline {section}{\numberline {7.2}Applicazione consegnata}{74}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{77}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Competenze Organizzative}{77}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Gestione delle \textit {Monorepo}}{78}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Tecnologie Principali Apprese}{79}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{79}{section.7.4}%
 \contentsline {chapter}{Sitografia}{i}{chapter*.26}%
