@@ -18,19 +18,25 @@
     \increasepagenumbering % increase the page numbrering by 1, in order to cout the frontispiece
     \input{preface/2_copyright}
     \input{preface/3_acknowledgements}
+    \blankpage
     \input{preface/4_abstract}
+    \blankpage
     \input{preface/5_table_of_contents}
     \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
     \printglossary[type=main, title=Glossario, toctitle=Glossario]
-    \blankpage % example of a blank page that also increases the page couter by 1
 
     \mainmatter
     \input{chapters/introduzione}
+    \blankpage
     \input{chapters/stage_descrizione}
+    \blankpage
     \input{chapters/tecnologie_utilizzate}
     \input{chapters/analisi_requisiti}
+    \blankpage
     \input{chapters/design_coding}
+    \blankpage
     \input{chapters/studio_fattibilita}
+    \blankpage
     \input{chapters/conclusioni}
 
     \pagenumbering{roman}

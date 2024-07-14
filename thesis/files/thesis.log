@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  10 JUL 2024 07:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.10)  14 JUL 2024 18:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex"
-(/Users/andreibobirica/Desktop/Tesi Laurea Triennale/thesis/files/thesis.tex
+**/Users/andreibobirica/Desktop/tesi/Tesi-Laurea-Triennale/thesis/files/thesis.tex
+(/Users/andreibobirica/Desktop/tesi/Tesi-Laurea-Triennale/thesis/files/thesis.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/book.cls
@@ -1148,9 +1148,13 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7.
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) (./preface/3_acknowledgements.tex [2
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) (./preface/4_abstract.tex [3
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) [3
 
 ]
+Package hyperref Info: Option `pageanchor' set `false' on input line 21.
+ [4
+
+] (./preface/4_abstract.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 11.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1173,16 +1177,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 11.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 11.
-) (./preface/5_table_of_contents.tex [4
-
-] (./thesis.toc [5
+) [5
 
 
-] [6] [7])
+]
+Package hyperref Info: Option `pageanchor' set `false' on input line 23.
+ [6
+
+] (./preface/5_table_of_contents.tex (./thesis.toc [7
+
+
+
+] [8] [9])
 \tf@toc=\write11
 \openout11 = `thesis.toc'.
 
- [8] (./thesis.lof)
+ [10] (./thesis.lof)
 \tf@lof=\write12
 \openout12 = `thesis.lof'.
 
@@ -1190,26 +1200,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@lot=\write13
 \openout13 = `thesis.lot'.
 
- [9
+ [11
 
 ] (./thesis.lol)
 \tf@lol=\write14
 \openout14 = `thesis.lol'.
 
- [10
+ [12
 
-]) (./thesis.acr) (./thesis.gls [11
-
-
-
-] [12
+]) (./thesis.acr) (./thesis.gls [13
 
 
-] [13]) [14]
-Package hyperref Info: Option `pageanchor' set `false' on input line 25.
- [15
 
-] (./chapters/introduzione.tex
+] [14
+
+
+] [15]) [16] (./chapters/introduzione.tex
 Capitolo 1.
 
 Overfull \hbox (2.7511pt too wide) in paragraph at lines 20--21
@@ -1217,7 +1223,6 @@ Overfull \hbox (2.7511pt too wide) in paragraph at lines 20--21
  []
 
 [1
-
 
 
 ] [2]
@@ -1231,29 +1236,39 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 33
  (/usr/local/texlive/2024/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3]
-<img/ddc.png, id=499, 1130.2225pt x 963.6pt>
+<img/ddc.png, id=504, 1130.2225pt x 963.6pt>
 File: img/ddc.png Graphic file (type png)
 <use img/ddc.png>
 Package pdftex.def Info: img/ddc.png  used on input line 57.
 (pdftex.def)             Requested size: 333.72318pt x 284.52756pt.
- [4 <./img/ddc.png>] [5]) (./chapters/stage_descrizione.tex
+ [4 <./img/ddc.png>] [5])
+Package hyperref Info: Option `pageanchor' set `false' on input line 30.
+ [6
+
+] (./chapters/stage_descrizione.tex
 Capitolo 2.
-[6
+[7
 
-] [7] [8] [9] [10]) (./chapters/tecnologie_utilizzate.tex
+
+] [8] [9] [10] [11])
+Package hyperref Info: Option `pageanchor' set `false' on input line 32.
+ [12
+
+] (./chapters/tecnologie_utilizzate.tex
 Capitolo 3.
-[11
+[13
 
-] [12] [13] [14] [15] [16]) (./chapters/analisi_requisiti.tex
+
+] [14] [15] [16] [17] [18]) (./chapters/analisi_requisiti.tex
 Capitolo 4.
-[17
+[19
 
-] [18] [19]
+] [20] [21]
 Overfull \hbox (9.54607pt too wide) in paragraph at lines 71--79
 \T1/lmr/bx/n/12 Descrizione: \T1/lmr/m/n/12 L'u-ten-te vi-sua-liz-za le in-for-ma-zio-ni di un de-ter-mi-na-to [][][]Ser-vi-ced Oven[][]$[]$di
  []
 
-[20]
+[22]
 Underfull \hbox (badness 2573) in paragraph at lines 148--149
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
@@ -1263,22 +1278,27 @@ Underfull \hbox (badness 2573) in paragraph at lines 150--151
 []|\T1/lmr/m/n/12 UC0, UC1,
  []
 
-[21] [22] [23] [24] [25]) (./chapters/design_coding.tex
+[23] [24] [25] [26] [27])
+Package hyperref Info: Option `pageanchor' set `false' on input line 35.
+ [28
+
+] (./chapters/design_coding.tex
 Capitolo 5.
-<img/frontendbackend.png, id=641, 1188.0pt x 659.34pt>
+<img/frontendbackend.png, id=655, 1188.0pt x 659.34pt>
 File: img/frontendbackend.png Graphic file (type png)
 <use img/frontendbackend.png>
 Package pdftex.def Info: img/frontendbackend.png  used on input line 15.
 (pdftex.def)             Requested size: 256.3214pt x 142.26378pt.
-[26
+[29
 
- <./img/frontendbackend.png (PNG copy)>] [27] [28] [29] [30] [31] [32] [33] [34] [35]
-<img/restgraphql.png, id=697, 596.04124pt x 356.87968pt>
+
+ <./img/frontendbackend.png (PNG copy)>] [30] [31] [32] [33] [34] [35] [36] [37] [38]
+<img/restgraphql.png, id=710, 596.04124pt x 356.87968pt>
 File: img/restgraphql.png Graphic file (type png)
 <use img/restgraphql.png>
 Package pdftex.def Info: img/restgraphql.png  used on input line 238.
 (pdftex.def)             Requested size: 237.60283pt x 142.26378pt.
- [36 <./img/restgraphql.png (PNG copy)>] [37]
+ [39 <./img/restgraphql.png (PNG copy)>] [40]
 \openout6 = `thesis.pyg'.
 
  (./_minted-thesis/default.pygstyle) (./_minted-thesis/D3F0D0CACBFABB7FD907B102D066A44045F6314F1AC508CA3B1599F1ED4E9BCE.pygtex
@@ -1289,33 +1309,33 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 2
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on input line 326.
- [38] [39]
+ [41] [42]
 \openout6 = `thesis.pyg'.
 
  (./_minted-thesis/38969297BC5C7052DDFAA99D021AC67445F6314F1AC508CA3B1599F1ED4E9BCE.pygtex)
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [40] [41] [42]
+ (./_minted-thesis/CB5B8678A40116BC3C9CBE6C57B627DA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [43] [44] [45]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/2C63BCFC95C34DB3DF6F7E919C76507245F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [43] [44]
+ (./_minted-thesis/2C63BCFC95C34DB3DF6F7E919C76507245F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [46] [47]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/2B6DFC01B9E339C83F6A8B01280CBD6945F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [45] [46]
+ (./_minted-thesis/2B6DFC01B9E339C83F6A8B01280CBD6945F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [48] [49]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/402CFFA959C5932F4BA79C72193860FA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [47] [48]
+ (./_minted-thesis/402CFFA959C5932F4BA79C72193860FA45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [50] [51]
 Overfull \hbox (8.99905pt too wide) in paragraph at lines 585--586
 []\T1/lmtt/m/n/12 InputField \T1/lmr/m/n/12 da \T1/lmtt/m/n/12 @unox/design-system/src/components/InputField\T1/lmr/m/n/12 : Un
  []
 
-[49]
+[52]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/17DC6303E822D0171D3BE36E2DD941EF45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [50]
+ (./_minted-thesis/17DC6303E822D0171D3BE36E2DD941EF45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [53]
 Overfull \vbox (72.04384pt too high) has occurred while \output is active []
 
- [51]
+ [54]
 Overfull \hbox (35.98323pt too wide) in paragraph at lines 673--675
 []\T1/lmtt/m/n/12 useGetOvensQuery, useGetProductDetailsQuery, useSearchProductQuery
  []
@@ -1330,33 +1350,38 @@ Overfull \hbox (12.69337pt too wide) in paragraph at lines 691--692
 []\T1/lmtt/m/n/12 Breadcrumbs, BreadcrumpsCtrl \T1/lmr/m/n/12 da \T1/lmr/m/it/12 ../../com-po-nen-ts/Breadcrumbs\T1/lmr/m/n/12 : Com-
  []
 
-[52] [53]
+[55] [56]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/2C6C23F07C608243FDEC6DE76C78199A45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [54]
+ (./_minted-thesis/2C6C23F07C608243FDEC6DE76C78199A45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [57]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/5004CB738122C46E84031DB097F2B0EC45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [55]
+ (./_minted-thesis/5004CB738122C46E84031DB097F2B0EC45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [58]
 \openout6 = `thesis.pyg'.
 
  (./_minted-thesis/89760FC5711B2C2A0BBC9D4AB620560E45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex)
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/8F0B29CF6182657F60D8519FE014095745F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [56]
+ (./_minted-thesis/8F0B29CF6182657F60D8519FE014095745F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [59]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/45414A7D0E8CEC54E969936D0D28921645F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [57]
+ (./_minted-thesis/45414A7D0E8CEC54E969936D0D28921645F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [60]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/E14D1D1AF7C21FC577C9A8C52FCC08FF45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [58] [59]
+ (./_minted-thesis/E14D1D1AF7C21FC577C9A8C52FCC08FF45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [61] [62]
 \openout6 = `thesis.pyg'.
 
- (./_minted-thesis/F7F3A12AF4255B35421911FDBBD84BEC45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [60] [61] [62]) (./chapters/studio_fattibilita.tex
+ (./_minted-thesis/F7F3A12AF4255B35421911FDBBD84BEC45F6314F1AC508CA3B1599F1ED4E9BCE.pygtex) [63] [64] [65])
+Package hyperref Info: Option `pageanchor' set `false' on input line 37.
+ [66
+
+] (./chapters/studio_fattibilita.tex
 Capitolo 6.
-[63
+[67
+
 
 ]
-<img/monorepocompare.png, id=825, 803.0pt x 298.11375pt>
+<img/monorepocompare.png, id=842, 803.0pt x 298.11375pt>
 File: img/monorepocompare.png Graphic file (type png)
 <use img/monorepocompare.png>
 Package pdftex.def Info: img/monorepocompare.png  used on input line 19.
@@ -1369,7 +1394,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[64 <./img/monorepocompare.png>]
+[68 <./img/monorepocompare.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.35403pt, for example:
@@ -1377,7 +1402,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[65]
+[69]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.35403pt, for example:
@@ -1385,7 +1410,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[66]
+[70]
 Overfull \hbox (9.48564pt too wide) in paragraph at lines 80--84
 \T1/lmr/m/n/12 zio-ni po-treb-be-ro fun-zio-na-re sen-za se-gna-la-re pro-ble-mi. Il fi-le \T1/lmtt/m/n/12 package.lock.json
  []
@@ -1407,7 +1432,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[67]
+[71]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.35403pt, for example:
@@ -1415,7 +1440,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[68]
+[72]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.35403pt, for example:
@@ -1423,7 +1448,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[69]
+[73]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.35403pt, for example:
@@ -1431,7 +1456,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[70]
+[74]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 15.35403pt, for example:
@@ -1439,16 +1464,21 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.85403pt}.
 
-[71]) (./chapters/conclusioni.tex
+[75])
+Package hyperref Info: Option `pageanchor' set `false' on input line 39.
+ [76
+
+] (./chapters/conclusioni.tex
 Capitolo 7.
-[72
+[77
 
-] [73]
+
+] [78]
 Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []|\T1/lmr/m/n/12 Architettura del-l'ap-pli-ca-
  []
 
-<img/ProductPageWeb.png, id=879, 1145.78062pt x 738.25812pt>
+<img/ProductPageWeb.png, id=899, 1145.78062pt x 738.25812pt>
 File: img/ProductPageWeb.png Graphic file (type png)
 <use img/ProductPageWeb.png>
 Package pdftex.def Info: img/ProductPageWeb.png  used on input line 121.
@@ -1458,14 +1488,14 @@ Overfull \hbox (14.79886pt too wide) in paragraph at lines 121--122
  [][] 
  []
 
-[74]
-<img/ProductPageMobile.png, id=884, 571.13374pt x 944.52875pt>
+[79]
+<img/ProductPageMobile.png, id=904, 571.13374pt x 944.52875pt>
 File: img/ProductPageMobile.png Graphic file (type png)
 <use img/ProductPageMobile.png>
 Package pdftex.def Info: img/ProductPageMobile.png  used on input line 130.
 (pdftex.def)             Requested size: 258.07101pt x 426.79134pt.
- [75 <./img/ProductPageWeb.png>]
-<img/ServicedOvenWeb.png, id=890, 1686.3pt x 944.52875pt>
+ [80 <./img/ProductPageWeb.png>]
+<img/ServicedOvenWeb.png, id=910, 1686.3pt x 944.52875pt>
 File: img/ServicedOvenWeb.png Graphic file (type png)
 <use img/ServicedOvenWeb.png>
 Package pdftex.def Info: img/ServicedOvenWeb.png  used on input line 140.
@@ -1475,7 +1505,7 @@ Overfull \hbox (81.18675pt too wide) in paragraph at lines 140--141
  [][] 
  []
 
-[76 <./img/ProductPageMobile.png>] [77 <./img/ServicedOvenWeb.png>] [78] [79] [80] [81]) (./references/webliography.tex
+[81 <./img/ProductPageMobile.png>] [82 <./img/ServicedOvenWeb.png>] [83] [84] [85] [86]) (./references/webliography.tex
 Overfull \hbox (0.71616pt too wide) in paragraph at lines 6--6
 [][]\T1/lmr/m/it/12 Integrating Gra-ph-ql with Re-dux tool-kit and RTK-query\T1/lmr/m/n/12 . \T1/lmr/m/sc/12 url\T1/lmr/m/n/12 : [][]$\T1/lmtt/m/n/12 https : / / lashanfaliq .
  []
@@ -1484,7 +1514,7 @@ Overfull \hbox (0.71616pt too wide) in paragraph at lines 6--6
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 \end{document}
+l.46 \end{document}
                     [1
 
 
@@ -1500,13 +1530,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40865 strings out of 474116
- 743950 string characters out of 5743682
+ 40871 strings out of 474116
+ 744050 string characters out of 5743682
  1959187 words of memory out of 5000000
- 62223 multiletter control sequences out of 15000+600000
+ 62229 multiletter control sequences out of 15000+600000
  678684 words of font info for 94 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 99i,12n,98p,2491b,3167s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,12n,98p,2494b,3167s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
 
@@ -1529,9 +1559,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on thesis.pdf (97 pages, 3260944 bytes).
+Output written on thesis.pdf (103 pages, 3263434 bytes).
 PDF statistics:
- 1406 PDF objects out of 1440 (max. 8388607)
+ 1426 PDF objects out of 1440 (max. 8388607)
  297 named destinations out of 1000 (max. 500000)
  885 words of extra memory for PDF output out of 10000 (max. 10000000)
 
